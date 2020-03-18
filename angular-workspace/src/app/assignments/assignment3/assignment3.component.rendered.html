@@ -1,0 +1,588 @@
+<ng-template #content>
+<h1 id="assignment-3-getting-the-design-right">Assignment 3: Getting the Design Right</h1>
+<!--
+<div class="alert alert-danger" markdown="1">
+This page is still being migrated and developed. All content remains subject to change.
+</div>
+-->
+<h2 id="overview">Overview</h2>
+<p>Now that you have chosen a design, it is time to iteratively refine that design.
+This group assignment, spanning multiple weeks of the course, tackles the problem
+of getting the design right through <strong>paper prototyping</strong>, <strong>inspection</strong>, and
+<strong>usability testing</strong>. Design refinement culminates in a <strong>digital mockup</strong>.</p>
+<h2 id="milestones">Milestones</h2>
+<p>This is a group assignment, consisting of five milestones.</p>
+<ul>
+<li>
+<app-generated-link linkHREF="#id-3a-paper-prototype">Assignment 3a: Paper Prototype</app-generated-link>
+<p><app-assignment-due-text dueText="{{ page.due_project_3a }}"></app-assignment-due-text></p>
+</li>
+<li>
+<app-generated-link linkHREF="#id-3b-heuristic-evaluation">Assignment 3b: Heuristic Evaluation</app-generated-link> 
+<p><app-assignment-due-text dueText="{{ page.due_project_3b }}"></app-assignment-due-text></p>
+</li>
+<li>
+<app-generated-link linkHREF="#id-3c-usability-testing-check-in">Assignment 3c: Usability Testing Check-In</app-generated-link>
+<p><app-assignment-due-text dueText="{{ page.due_project_3c }}"></app-assignment-due-text></p>
+</li>
+<li>
+<app-generated-link linkHREF="#id-3d-usability-testing-review">Assignment 3d: Usability Testing Review</app-generated-link>
+<p><app-assignment-due-text dueText="{{ page.due_project_3d }}"></app-assignment-due-text></p>
+</li>
+<li>
+<app-generated-link linkHREF="#id-3e-digital-mockup">Assignment 3e: Digital Mockup</app-generated-link> 
+<p><app-assignment-due-text dueText="{{ page.due_project_3e }}"></app-assignment-due-text></p>
+</li>
+<li>
+<app-generated-link linkHREF="#id-3p-presentation">Assignment 3p: Presentation</app-generated-link>
+<p><app-assignment-due-text dueText="{{ page.due_project_3p }}"></app-assignment-due-text></p>
+</li>
+<li>
+<app-generated-link linkHREF="#id-3web-getting-the-design-right">Assignment 3web: Final Report</app-generated-link>
+<p><app-assignment-due-text dueText="{{ page.due_project_3web }}"></app-assignment-due-text></p>
+</li>
+</ul>
+<h2 id="deliverables">Deliverables</h2>
+<h3 id="id-3a-paper-prototype">3a: Paper Prototype</h3>
+<p><app-assignment-due-text dueText="{{ page.due_project_3a }}"></app-assignment-due-text></p>
+<p>The goal of this milestone is to develop an initial paper prototype that will begin to allow testing of your design.</p>
+<p>Develop a paper prototype for your design.
+It should convey all critical aspects of your design, including support for testing your two primary tasks.</p>
+<p>This prototype has been informed by your prior sketching and storyboarding.
+But it also contains more details than your prior exploratory designs.
+If necessary or appropriate, revise your tasks or scenarios based on what you learn in prototyping.</p>
+<!-- Samples from Prior Offerings -->
+<p><app-assignment-samples sampleToLink="3a"></app-assignment-samples></p>
+<h4 id="submission">Submission</h4>
+<p>No more than one page of text in PDF format.</p>
+<p>Capture and submit detailed images of your paper prototype. Include:</p>
+<ul>
+<li>An overview image that shows your entire paper prototype.</li>
+<li>Detailed images showing each component as you walk through your two primary tasks.</li>
+</ul>
+<p>Images do not count against your page limit, and are therefore effectively free.
+You should embed images throughout your PDF, keeping them near the text that references them.
+The limit applies to the approximate amount of text you would have if all images were removed.</p>
+<p>Submit via Canvas here:</p>
+<p><app-assignment-submission-link linkSubmission="{{ page.link_project_3a }}"></app-assignment-submission-link></p>
+<p><strong>In-Class Exercise</strong>:
+In addition to your submission, bring your prototype to class.
+You will need it to conduct a heuristic evaluation during class.</p>
+<h4 id="contribution-statement">Contribution Statement</h4>
+<p><app-assignment-contribution-statement></app-assignment-contribution-statement></p>
+<h4 id="grading">Grading</h4>
+<p>This milestone will be graded on a scale of <strong>12 points</strong>:</p>
+<ol>
+<li><strong>Overall Completeness and Appropriateness of Paper Prototype</strong>: (4 points)</li>
+<li><strong>Completeness, Appropriateness, and Documentation of Each Task</strong>: (3 points per task)</li>
+<li><strong>Clarity and Presentation</strong>: (2 points)</li>
+</ol>
+<h3 id="id-3b-heuristic-evaluation">3b: Heuristic Evaluation</h3>
+<p><app-assignment-due-text dueText="{{ page.due_project_3b }}"></app-assignment-due-text></p>
+<p>The goal of this milestone is to conduct heuristic evaluations as part of rapidly iterating on your paper prototype.</p>
+<p>You will receive an evaluation in class, and you will supplement this with another evaluation.</p>
+<p>In class, pair with another team to conduct heuristic evaluations.
+One team will conduct a heuristic evaluation of the other’s paper prototype, then the two teams will reverse roles.
+Each team will therefore conduct and receive one heuristic evaluation.</p>
+<p>We will provide a worksheet with Nielsen's heuristics:</p>
+<app-generated-link linkHREF="/assets/assignments/3b-nielsen-heuristics.pdf">3b-nielsen-heuristics.pdf</app-generated-link>
+<p>For each issue identified in evaluation, record:</p>
+<ul>
+<li>The heuristic that is violated.</li>
+<li>A description of the usability issue, including an image of the relevant portion of the prototype.</li>
+<li>A severity rating (ranging from 0 for <em>no problem</em> to 4 for <em>usability catastrophe</em>).</li>
+</ul>
+<p>Revise your paper prototype based on what you learn in heuristic evaluation.
+Your tasks and scenarios are likely stable, but revise them if your evaluation reveals a need.</p>
+<p>Outside of class, arrange to receive a second heuristic evaluation with another team.
+You therefore received two heuristic evaluations of your paper prototype.
+If desired, you may also conduct a heuristic evaluation or cognitive walkthrough of your own paper prototype.</p>
+<h4 id="submission-2">Submission</h4>
+<p>Records of your inspection-based methods will be submitted as part of later assignments.</p>
+<p>Be sure to keep detailed records, including images of relevant portions of the prototype before and after revisions.</p>
+<h3 id="id-3c-usability-testing-check-in">3c: Usability Testing Check-In</h3>
+<p><app-assignment-due-text dueText="{{ page.due_project_3c }}"></app-assignment-due-text></p>
+<p>The goal of this milestone is to document changes resulting from your inspection-based analyses
+and to begin usability testing of your revised prototype with participants.</p>
+<p>Complete one usability test with your paper prototype, examining your two primary tasks.</p>
+<p>Target an appropriate participant based on your design research and resulting design.</p>
+<p>Be sure to divide your team into roles when conducting a usability test.
+There is simply too much required for a single person to effectively conduct a test.
+As discussed in class, roles include the facilitator, the computer, and one or more observers.</p>
+<p>As part of your introduction, have your facilitator show the participant how to interact with your design.
+Do not show participants how to perform your tasks that you will later test.
+Instead show them how paper prototyping works, how your system generally works,
+and give an example of something specific that is sufficiently different from your tasks.</p>
+<p>During the test, record a log of critical incidents, including both positive and negative events.
+For example, a person might comment on something they like or might make a mistake in a task.
+Record the incident along with a description of the context of the incident.</p>
+<p>Consider recording your tests to allow you to see and show exactly what happened.
+If you do this, obtain permission from the participant and ensure your recording preserves the anonymity of the participant.
+Frame your shot such that you capture interaction with the prototype without unnecessarily capturing the participant.</p>
+<p>Each participant should perform both of your primary tasks.
+Keep the data separate for each participant and each task.
+Remember participation must be voluntary, participants should be free to stop at any time,
+and you should emphasize that your focus is on identifying usability issues in the design.</p>
+<p>Revise your paper prototype based on what you learn in usability testing.
+This can and should include fixing major issues as soon as they are detected, before additional tests.
+Your tasks and scenarios are likely stable, but revise them if your evaluation reveals a need.</p>
+<p>Present your iterative revisions and your plan going forward:</p>
+<ul>
+<li>
+<p>Present a table or list of results from your inspection-based methods. For each identified issue, include:</p>
+<ul>
+<li>The heuristic that is violated or the believability issue identified in walkthrough.</li>
+<li>A description of the usability issue, including an image of the relevant portion of the prototype.</li>
+<li>A severity rating (ranging from 0 for <em>no problem</em> to 4 for <em>usability catastrophe</em>).</li>
+<li>An image and explanation of any revision implemented as a result.</li>
+</ul>
+</li>
+<li>
+<p>Discuss your first usability test. Provide a description of the test, including the participant, the environment where you conducted the test,
+why you chose this participant and environment, the test protocol, and the roles of each team member who participated in the test.
+Discuss anything you learned about the testing process itself, or any revisions you decided you need to make to your testing process.</p>
+</li>
+<li>
+<p>Present a table or list of results from your first usability test. For each critical incident, include:</p>
+<ul>
+<li>An image of the relevant portion of the prototype.</li>
+<li>Description of the incident, remembering that these can be either positive or negative.</li>
+<li>For negative incidents, a severity rating (ranging from 0 for <em>no problem</em> to 4 for <em>usability catastrophe</em>).</li>
+<li>For negative incidents, an image and explanation of any revision implemented as a result.</li>
+</ul>
+</li>
+<li>
+<p>Submit detailed images of your current paper prototype, as revised in this process. Include both:</p>
+<ul>
+<li>An overview image that shows your entire paper prototype.</li>
+<li>Detailed images showing each component as you walk through your two primary tasks.</li>
+</ul>
+</li>
+<li>
+<p>Present your plan for the remainder of your usability tests.
+Describe what goals you have for the additional tests and any new approaches you will employ.
+You will conduct one usability test in section,
+describe your plans for recruiting an additional participant.</p>
+</li>
+</ul>
+<p>As you assemble this documentation of the iterative improvement of your design,
+you may find that some changes feel minor relative to the overhead of documenting those changes.
+Your goals in this documentation are to:</p>
+<ul>
+<li>Show your work in the iterative design process, giving enough insight to understand your progress.</li>
+<li>Capture a record to which you can return in preparing your web content and presentation.</li>
+</ul>
+<p>You may choose to not fully document minor changes, but be sure to document enough for these two goals.</p>
+<!-- Samples from Prior Offerings -->
+<p><app-assignment-samples sampleToLink="3c"></app-assignment-samples></p>
+<h4 id="submission-3">Submission</h4>
+<p>No more than three pages of text in PDF format.</p>
+<p>Images do not count against your page limit, and are therefore effectively free.
+You should embed images throughout your PDF, keeping them near the text that references them.
+The limit applies to the approximate amount of text you would have if all images were removed.</p>
+<p>Submit via Canvas here:</p>
+<p><app-assignment-submission-link linkSubmission="{{ page.link_project_3c }}"></app-assignment-submission-link></p>
+<p>Be prepared to discuss your iterative revision of your paper prototype.</p>
+<p><strong>In-Section Exercise</strong>:
+In addition to your submission, bring your prototype to section.
+You will need it to conduct a usability test during section.</p>
+<h4 id="contribution-statement-2">Contribution Statement</h4>
+<p><app-assignment-contribution-statement></app-assignment-contribution-statement></p>
+<h4 id="grading-2">Grading</h4>
+<p>This milestone will be graded on a scale of <strong>14 points</strong>:</p>
+<ol>
+<li><strong>Issues Identified from Inspection, Revisions Made in Response</strong>: (4 points)</li>
+<li><strong>Discussion of Usability Test and Plan</strong>: (3 points)</li>
+<li><strong>Issues Identified in Usability Test, Revisions Made in Response</strong>: (2 points)</li>
+<li><strong>Updated Images of Paper Prototype</strong>: (3 points)</li>
+<li><strong>Clarity and Presentation</strong>: (2 points)</li>
+</ol>
+<h3 id="id-3d-usability-testing-review">3d: Usability Testing Review</h3>
+<p><app-assignment-due-text dueText="{{ page.due_project_3d }}"></app-assignment-due-text></p>
+<p>The goal of this milestone is to complete usability testing of your prototype with participants.</p>
+<p>Complete a total of at least three usability tests and finalize your paper prototype according to what you learn.</p>
+<p>Present the results of your usability testing and your final paper prototype:</p>
+<ul>
+<li>
+<p>Discuss your three usability tests. Provide a description of each test, including the participant, the environment where you conducted the test,
+why you chose this participant and environment, the test protocol, and the roles of each team member who participated in the test.
+Briefly discuss revisions you made in your process and prototype over the course of your testing.</p>
+</li>
+<li>
+<p>Present a table or list of results from your three usability tests. For each critical incident, include:</p>
+<ul>
+<li>An image of the relevant portion of the prototype.</li>
+<li>Description of the incident, remembering that these can be either positive or negative.</li>
+<li>For negative incidents, a severity rating (ranging from 0 for <em>no problem</em> to 4 for <em>usability catastrophe</em>).</li>
+<li>For negative incidents, an image and explanation of any revision implemented as a result.</li>
+</ul>
+</li>
+<li>
+<p>Submit detailed images of your final paper prototype, as revised in this process. Include both:</p>
+<ul>
+<li>An overview image that shows your entire paper prototype.</li>
+<li>Detailed images showing each component as you walk through your two primary tasks.</li>
+</ul>
+</li>
+<li>
+<p>Discuss two to four revisions that you consider to be your most salient and important modifications
+based on issues identified in inspection, usability testing, or critique.
+These may already be included in the above list, but discuss them in more detail and argue why detecting and fixing them is important to your design.</p>
+</li>
+</ul>
+<p>As you assemble this documentation of the iterative improvement of your design,
+you may find that some changes feel minor relative to the overhead of documenting those changes.
+Your goals in this documentation are to:</p>
+<ul>
+<li>Show your work in the iterative design process, giving enough insight to understand your progress.</li>
+<li>Capture a record to which you can return in preparing your web content and presentation.</li>
+</ul>
+<p>You may choose to not fully document minor changes, but be sure to document enough for these two goals.</p>
+<!-- Samples from Prior Offerings -->
+<p><app-assignment-samples sampleToLink="3d"></app-assignment-samples></p>
+<h4 id="submission-4">Submission</h4>
+<p>No more than three pages of text in PDF format.</p>
+<p>Images do not count against your page limit, and are therefore effectively free.
+You should embed images throughout your PDF, keeping them near the text that references them.
+The limit applies to the approximate amount of text you would have if all images were removed.</p>
+<p>Submit via Canvas here:</p>
+<p><app-assignment-submission-link linkSubmission="{{ page.link_project_3d }}"></app-assignment-submission-link></p>
+<p>Be prepared to discuss your iterative revision of your paper prototype.</p>
+<h4 id="contribution-statement-3">Contribution Statement</h4>
+<p><app-assignment-contribution-statement></app-assignment-contribution-statement></p>
+<h4 id="grading-3">Grading</h4>
+<p>This milestone will be graded on a scale of <strong>14 points</strong>:</p>
+<ol>
+<li><strong>Discussion of Usability Tests</strong>: (2 points)</li>
+<li><strong>Issues Identified in Usability Tests, Revisions Made in Response</strong>: (3 points)</li>
+<li><strong>Updated Images of Paper Prototype</strong>: (3 points)</li>
+<li><strong>Discussion of Key Revisions in Design Process</strong>: (4 points)</li>
+<li><strong>Clarity and Presentation</strong>: (2 points)</li>
+</ol>
+<h3 id="id-3e-digital-mockup">3e: Digital Mockup</h3>
+<p><app-assignment-due-text dueText="{{ page.due_project_3e }}"></app-assignment-due-text></p>
+<p>The goal of this milestone is to transition your prototype into a digital mockup of your design.</p>
+<p>Create your digital mockup based on your final paper prototype.
+Do not begin working in digital prototyping until you finish revising your paper prototype.
+It is much easier to iterate on your design in the paper prototyping phase.</p>
+<p>As you transition into digital prototyping, you will need to consider other aspects of the design.
+This can include detail you may not have previously considered (e.g., visual design, layout, color, typography),
+but can also include constraints or mismatches introduced by the technology itself.
+Note decisions or changes you need to make as you transition from paper to a digital representation.</p>
+<p>The mockup should effectively communicate your design in a manner appropriate for your web content, presentation, and poster.
+Implement your digital mockup to include key frames that illustrate your design.
+It should convey all critical aspects of your design, including walkthroughs for your two primary tasks.</p>
+<p>We have no strong preference regarding what digital tools you use to create your mockup.
+But it must be digital (e.g., you may not use pictures of a hand-drawn sketch).
+Some tools support creation of interactive mockups (e.g., allow clicking active regions to move between screens).
+You are welcome to use such a tool, and such interactivity may be helpful in your video.
+But interactive mockups are neither expected nor required.</p>
+<p>Commonly-used tools include:</p>
+<ul>
+<li>
+<app-generated-link linkHREF="http://www.adobe.com/products/experience-design.html">Adobe Experience Design</app-generated-link>
+</li>
+<li>
+<app-generated-link linkHREF="http://www.adobe.com/products/illustrator.html">Adobe Illustrator</app-generated-link>
+</li>
+<li>
+<app-generated-link linkHREF="http://www.axure.com/">Axure</app-generated-link>
+</li>
+<li>
+<app-generated-link linkHREF="https://balsamiq.com/">Balsamiq</app-generated-link>
+</li>
+<li>
+<app-generated-link linkHREF="https://www.figma.com/">Figma</app-generated-link>
+</li>
+<li>
+<app-generated-link linkHREF="http://www.infragistics.com/products/indigo-studio">Indigo Studio</app-generated-link>
+</li>
+<li>
+<app-generated-link linkHREF="http://www.inkscape.org/en/">InkScape</app-generated-link>
+</li>
+<li>
+<app-generated-link linkHREF="http://office.microsoft.com/en-us/visio/">Microsoft Visio</app-generated-link>
+</li>
+<li>
+<app-generated-link linkHREF="http://www.omnigroup.com/omnigraffle">Omnigraffle</app-generated-link>
+</li>
+<li>
+<app-generated-link linkHREF="https://vectr.com/">Vectr</app-generated-link>
+</li>
+</ul>
+<p>Present your digital mockup together with discussion of the decisions and changes you made:</p>
+<ul>
+<li>
+<p>Submit detailed images of your digital mockup. Include both:</p>
+<ul>
+<li>Overview images that show your digital mockup.</li>
+<li>Detailed images showing each component as you walk through your two primary tasks.</li>
+</ul>
+</li>
+<li>
+<p>Discuss decisions and changes you made in implementing the digital mockup.</p>
+</li>
+</ul>
+<p>As you assemble this documentation of the iterative improvement of your design,
+you may find that some changes feel minor relative to the overhead of documenting those changes.
+Your goals in this documentation are to:</p>
+<ul>
+<li>Show your work in the iterative design process, giving enough insight to understand your progress.</li>
+<li>Capture a record to which you can return in preparing your web content and presentation.</li>
+</ul>
+<p>You may choose to not fully document minor changes, but be sure to document enough for these two goals.</p>
+<!-- Samples from Prior Offerings -->
+<p><app-assignment-samples sampleToLink="3e"></app-assignment-samples></p>
+<h4 id="submission-5">Submission</h4>
+<p>No more than one page of text in PDF format.</p>
+<p>Images do not count against your page limit, and are therefore effectively free.
+You should embed images throughout your PDF, keeping them near the text that references them.
+The limit applies to the approximate amount of text you would have if all images were removed.</p>
+<p>Submit via Canvas here:</p>
+<p><app-assignment-submission-link linkSubmission="{{ page.link_project_3e }}"></app-assignment-submission-link></p>
+<p>Be prepared to discuss your digital mockup and revisions that occurred in its creation.</p>
+<p><strong>In-Class Exercise</strong>:
+In addition to your submission, bring a printed copy of your digital mockup (i.e., a color print of this submission).
+You will need this for in-class critique.</p>
+<h4 id="contribution-statement-4">Contribution Statement</h4>
+<p><app-assignment-contribution-statement></app-assignment-contribution-statement></p>
+<h4 id="grading-4">Grading</h4>
+<p>This milestone will be graded on a scale of <strong>14 points</strong>:</p>
+<ol>
+<li><strong>Overall Completeness and Appropriateness of Digital Mockup</strong>: (3 points)</li>
+<li><strong>Completeness, Appropriateness, and Documentation of Each Task</strong>: (3 points each)</li>
+<li><strong>Discussion of Decisions and Changes in Implementation</strong>: (3 points)</li>
+<li><strong>Clarity and Presentation</strong>: (2 points)</li>
+</ol>
+<h3 id="id-3p-presentation">3p: Presentation</h3>
+<p><app-assignment-due-text dueText="{{ page.due_project_3p }}"></app-assignment-due-text></p>
+<p>The goal of this milestone is to effectively communicate your design prototyping in a presentation.</p>
+<p>Prepare a presentation of your process in getting the design right. It should encompass all of your work in Assignment 3.</p>
+<ul>
+<li>Two members of your team should deliver the presentation, each speaking to relatively equal portions.</li>
+<li>A seven minute time limit will be strictly enforced, with additional time for questions.</li>
+<li>Presenters should be different from those for Assignment 2, such that everybody presents at least once this quarter.
+If there is some reason this cannot work for your team, be sure you have communicated with us.</li>
+</ul>
+<p>A suggested organization of this presentation is:</p>
+<ol>
+<li>
+<p><strong>Title Slide</strong>:</p>
+<p>A short, creative, and marketable title capturing the key idea.</p>
+<p>Include team member names. Be clear which team members are presenting.</p>
+</li>
+<li>
+<p><strong>Overall Problem</strong>:</p>
+<p>Convey that your problem is both important and appropriate for a design investigation.</p>
+<p>Motivate your audience to be interested in your problem and your proposed solution.
+Remember that you are teaching us what you learned in your process, you are not &quot;selling&quot; your solution.
+Be sure to avoid simply reading slide bullets, as you need to develop a connection to your audience.</p>
+</li>
+<li>
+<p><strong>Initial Paper Prototype</strong>:</p>
+<p>Present your initial paper prototype.
+Convey the critical aspects of your design, including the two primary tasks being refined in your paper prototype.</p>
+</li>
+<li>
+<p><strong>Testing Process</strong>:</p>
+<p>Present your process for iteratively improving your design, including:</p>
+<ul>
+<li>your methods (i.e., what methods did you use to improve your initial design),</li>
+<li>your participants (i.e., what participants did you engage).</li>
+</ul>
+</li>
+<li>
+<p><strong>Testing Results and Prototype Refinement</strong>:</p>
+<p>Present usability and design issues that you identified and iterative improvements you made to address those issues.
+This will include changes from your heuristic evaluation, usability testing, and design critique.</p>
+<p>Discuss identified issues as an appropriate level of detail, including:</p>
+<ul>
+<li>specific usability issues that were identified and corrected (e.g., consider before and after comparisons),</li>
+<li>higher-level findings and themes that emerged (e.g., consider explaining a specific issue that was identified and how it led to a larger revision of the design).</li>
+</ul>
+</li>
+<li>
+<p><strong>Final Paper Prototype</strong>:</p>
+<p>Present your final paper prototype.
+Convey the critical aspects of your design, including the two primary tasks.
+This might be shorter than your presentation of the initial paper prototype,
+because you already presented changes and are about to present the digital mockup.
+This might also have been part of your testing process and results, if changes were illustrated there.</p>
+</li>
+<li>
+<p><strong>Digital Mockup</strong>:</p>
+<p>Present your digital mockup.
+Convey the critical aspects of your design, including the two primary tasks.
+Discuss any significant changes that were required when transitioning from a paper prototype.</p>
+</li>
+</ol>
+<p>We strongly recommend rehearsing your presentation beforehand.
+For example, arrange to practice together with another group or two, giving each other feedback on your presentations.</p>
+<p>Note that we have not set a required number of slides in each section of this presentation.
+You can deliver your presentation using as many or as few slides as you want,
+as long as your presentation successfully addresses the above points in the allowed time.</p>
+<!-- Samples from Prior Offerings -->
+<p><app-assignment-samples sampleToLink="3p"></app-assignment-samples></p>
+<h4 id="submission-6">Submission</h4>
+<p>Your presentation may be in PPT, PPTX, or PDF format.</p>
+<p>To minimize switching time, we will have all presentations on a single laptop running Microsoft Windows.
+You should optimize your presentation for portability (e.g., ensure any necessary fonts are embedded).
+If we detect any obvious formatting issues on the presentation machine, we may fix them or contact you to fix them.
+But you are ultimately responsible for your presentation.</p>
+<p>Submit via Canvas here:</p>
+<p><app-assignment-submission-link linkSubmission="{{ page.link_project_3p }}"></app-assignment-submission-link></p>
+<p>Names of participants should be replaced with pseudonyms in all documents.
+It is important to protect participant anonymity, even in the case that reporting seems harmless.</p>
+<!-- Contribution Statement -->
+<p><app-assignment-contribution-statement></app-assignment-contribution-statement></p>
+<h3 id="grading-5">Grading</h3>
+<p>The course staff will have a grading form they keep during your presentation:</p>
+<p><app-generated-link linkHREF="/assets/assignments/3p-presentation-staff-form.pdf">3p-presentation-staff-form.pdf</app-generated-link></p>
+<p>The content of this presentation will be graded on a scale of <strong>16 points</strong>:</p>
+<ul>
+<li>Presentations should not have an outline slide.
+They are short enough to be told as a story of your process, and your outline is the same as every other presentation.
+Instead use that time to tell us about your project.</li>
+<li>The problem and your proposed solution should be presented in a manner that is compelling,
+should teach us what you learned in your process rather than &quot;selling&quot; your solution.</li>
+<li>The initial prototype should be effectively conveyed through two scenarios.</li>
+<li>The process of iteratively improving the design should be effectively conveyed and appropriate for the design.</li>
+<li>Findings and iterative improvements of the design should be effectively conveyed.</li>
+<li>The final design, as represented by your digital mockup, should be effectively conveyed through two scenarios.</li>
+<li>Presentations should show appropriate preparation,
+with slides that are legible and content that is effective, properly prepared, and properly employed.</li>
+<li>Presentations should cover the required scope within the allowed time.</li>
+</ul>
+<p>The delivery of this presentation will be graded on a scale of <strong>4 points</strong>:</p>
+<ul>
+<li>Presenter makes eye contact with the audience.</li>
+<li>Presenter projects their voice well and is audible throughout the room.</li>
+<li>Presenter feels engaged with the content, not just reading slides.</li>
+<li>Presenter covers the required scope within the allowed time.</li>
+</ul>
+<h3 id="id-3web-getting-the-design-right">3web: Getting the Design Right</h3>
+<p><app-assignment-due-text dueText="{{ page.due_project_3web }}"></app-assignment-due-text></p>
+<p>The goal of this milestone is to effectively communicate your design prototyping in a post appropriate for a web portfolio.</p>
+<p>Prepare a post documenting your process of getting the design right.
+Your post will be integrated into the course website via a Projects page,
+used to both advertise the course poster session and to provide an archive of course projects.
+Your post should follow the outline below, and will be posted together with the content from your prior post.</p>
+<p>Your prior milestones provide significant content you can draw upon in this post,
+but this post is intended for an audience of future readers reviewing your design work.
+Not all of the content from prior milestones is included
+(e.g., you will convey both specific usability issues and higher-level findings,
+but do not need to provide an exhaustive enumeration of changes made in your processes),
+you should update your prior work based on feedback received throughout your design process,
+and you may choose to omit elements of your work that were ultimately less relevant to your design process.</p>
+<ol>
+<li>
+<p><strong>Title</strong></p>
+<p>A short, creative, and marketable title capturing the key idea.</p>
+</li>
+<li>
+<p><strong>Problem and Solution Overview</strong>:</p>
+<p>A concise statement of the problem you are addressing and a brief introduction of your proposed solution.</p>
+<p>It is appropriate to assume that a reader of this post will have already read your previous post.
+Therefore briefly set context for your iterative design in Assignment 3 without repeating the full context from Assignment 2.</p>
+<p>This could be organized as an introduction of key themes from your design research and how that motivated your initial design.</p>
+</li>
+<li>
+<p><strong>Initial Paper Prototype</strong>:</p>
+<p>Present your initial paper prototype.
+Convey the critical aspects of your design,
+including the two primary tasks being refined in your paper prototype.
+This provides a baseline upon which to report iterative prototyping and refinement of your design.</p>
+</li>
+<li>
+<p><strong>Testing Process</strong>:</p>
+<p>Present your testing process, including your method and your participants.
+This process probably evolved in the course of your testing
+(e.g., as your design or focus evolved through testing).
+Include a retrospective on how you refined your process, distinct from how you refined your design.</p>
+</li>
+<li>
+<p><strong>Testing Results and Prototype Refinement</strong>:</p>
+<p>Present usability and design issues that you identified and iterative improvements you made to address those issues.
+This will include changes from your heuristic evaluation, usability testing, and design critique.</p>
+<p>Discuss identified issues as an appropriate level of detail, including:</p>
+<ul>
+<li>specific usability issues that were identified and corrected (e.g., consider before and after comparisons),</li>
+<li>higher-level findings and themes that emerged (e.g., consider explaining a specific issue that was identified and how it led to a larger revision of the design).</li>
+</ul>
+<p>Consider different potential organizations of your results and design progression, including:</p>
+<ul>
+<li>a chronological organization, discussing what you learned about each version of your prototype and what changes you made as a result,</li>
+<li>a bottom-up organization, starting from specific issues and discussing how they revealed higher-level findings and changes,</li>
+<li>a top-down organization, starting from higher-level themes and showing how they applied in specific design changes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Final Paper Prototype</strong>:</p>
+<p>Present your final version of your paper prototype, as you did for your initial paper prototype above.
+Convey the critical aspects of your design,
+including the two primary tasks being refined in your paper prototype.</p>
+</li>
+<li>
+<p><strong>Digital Mockup</strong>:</p>
+<p>Present your digital mockup.
+Convey the critical aspects of your design,
+including the two primary tasks being refined in your paper prototype.</p>
+<p>Include descriptions of how your design supports each of your primary tasks
+(e.g., as scenarios demonstrating the task in your final design).
+Briefly reflect on any changes you needed to make as you switched to digital tools from your paper prototype.</p>
+</li>
+</ol>
+<p>Ensure your post is appropriately clear and easy to read. This includes:</p>
+<ul>
+<li>text should be clear and concise</li>
+<li>use section headings and formatting as appropriate</li>
+<li>include images in the body of the post</li>
+<li>check for typos, spelling, and grammar errors</li>
+</ul>
+<!-- Samples from Prior Offerings -->
+<p><app-assignment-samples sampleToLink="3web"></app-assignment-samples></p>
+<h4 id="submission-7">Submission</h4>
+<p>Evidence suggests that effective posts can be read in approximately 7 minutes:</p>
+<app-generated-link linkHREF="https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b">https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b</app-generated-link>
+<p>Author your post such that it conveys the necessary content while remaining easy to skim and read within approximately 7 minutes.
+We estimate posts will be between 1500 and 2000 words in length.</p>
+<p>You post must be a plain text file, formatted in Markdown syntax:</p>
+<app-generated-link linkHREF="https://daringfireball.net/projects/markdown/syntax">https://daringfireball.net/projects/markdown/syntax</app-generated-link>
+<p>Name the file <code>designprototyping.md</code>. In addition to your Markdown file, you will also need to provide:</p>
+<ol>
+<li><strong>All images referenced by your Markdown file</strong>:
+These will be placed in the same directory as your rendered Markdown file.
+Instead of Markdown's image syntax, consider incorporating <code>img</code> tags directly in your Markdown,
+thus allowing you to specify the rendering size of the image.</li>
+</ol>
+<p>Your Markdown file and all images should be submitted as a single Zip archive file,
+as Canvas will otherwise mangle the names of your image files.
+Note that these files will be placed in the same directory as files from your prior post,
+so ensure there are no naming conflicts in your image files.</p>
+<p>For guidance on formatting your Markdown and its included images, see the source files from prior posts:</p>
+<app-generated-link linkHREF="https://github.com/uwcse440/web-cse440-wi20/tree/master/angular-workspace/src/assets/projects">https://github.com/uwcse440/web-cse440-wi20/tree/master/angular-workspace/src/assets/projects</app-generated-link>
+<p>Submit via Canvas here:</p>
+<p><app-assignment-submission-link linkSubmission="{{ page.link_project_3web }}"></app-assignment-submission-link></p>
+<p>Names of participants should be replaced with pseudonyms in all documents.
+It is important to protect participant anonymity, even in the case that reporting seems harmless.</p>
+<!-- Contribution Statement -->
+<p><app-assignment-contribution-statement></app-assignment-contribution-statement></p>
+<p>Your post should be complete and will be evaluated as such.
+But you will also be able to make later modifications as we integrate your post into the course website (e.g., to correct any formatting issues) or as your project evolves (e.g., if your project title later changes).</p>
+<h4 id="grading-6">Grading</h4>
+<p>This report will be graded on a scale of <strong>24 points</strong>:</p>
+<ol>
+<li><strong>Title</strong>: (1 point)</li>
+<li><strong>Project Thumbnail</strong>: (1 point)</li>
+<li><strong>Team Member Images and Names</strong>: (1 points)</li>
+<li><strong>Problem and Solution Overview</strong>: (2 points)</li>
+<li><strong>Initial Paper Prototype</strong>: (3 points)</li>
+<li><strong>Testing Process</strong>: (2 points)</li>
+<li><strong>Testing Results and Prototype Refinement</strong>: (4 points)</li>
+<li><strong>Final Paper Prototype</strong>: (3 points)</li>
+<li><strong>Digital Mockup</strong>: (3 points)</li>
+<li><strong>Clarity and Presentation</strong>: (4 points)</li>
+</ol>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="content"></ng-container>

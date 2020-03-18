@@ -1,0 +1,233 @@
+<div class="container app-main">
+  <div class="row">
+    <div class="col">
+      <h1>Projects</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <ng-container *ngTemplateOutlet="content"></ng-container>
+    </div>
+  </div>
+</div>
+
+<ng-container *ngFor="let project of projects.projects">
+  <img src="assets/projects/{{ project.path }}/project_thumb.png" style="display: none;"/>
+  <img src="assets/projects/{{ project.path }}/poster.png" style="display: none;"/>
+  <ng-container *ngFor="let person of project.people">
+    <img src="assets/projects/{{ project.path }}/{{ person.photo }}" style="display: none;"/>
+  </ng-container>
+</ng-container>
+
+<ng-template #projectmodal let-modal>
+  <div class="modal-header">
+    <h1 class="modal-title" id="modal-basic-title">{{ project.name }}</h1>
+
+    <span class="close">
+      <span class="btn-group mr-3">
+        <button type="button" class="btn btn-lg" aria-label="Previous Project" (click)="previousProject()">
+          <span aria-hidden="true">&lt;</span>
+        </button>
+        <button type="button" class="btn btn-lg" aria-label="Next Project" (click)="nextProject()">
+          <span aria-hidden="true">&gt;</span>
+        </button>
+      </span>
+      <span class="btn-group">
+        <button type="button" class="btn btn-lg" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </span>
+    </span>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-auto">
+        <div class="projectThumbBox">
+          <p>
+            <img src="assets/projects/{{ project.path }}/project_thumb.png" width="150" class="projectThumbImage" alt="{{ project.name }}"/>
+          </p>
+        </div>
+
+        <p *ngIf="projectScreen==''">Project Team<br>and Poster</p>
+        <a *ngIf="projectScreen!=''" routerLink="/projects/{{ project.path }}"><p>Project Team<br>and Poster</p></a>
+        <p *ngIf="projectScreen=='designresearch'">Design<br>Research</p>
+        <a *ngIf="projectScreen!='designresearch'" routerLink="/projects/{{ project.path }}/designresearch"><p>Design<br>Research</p></a>
+        <p *ngIf="projectScreen=='designprototyping'">Design<br>Prototyping</p>
+        <a *ngIf="projectScreen!='designprototyping'" routerLink="/projects/{{ project.path }}/designprototyping"><p>Design<br>Prototyping</p></a>
+
+      </div>
+      <div class="col container">
+        <div *ngIf="projectScreen==''">
+            <div class="row justify-content-center">
+              <div class="col">
+                <!-- Video Removed from Winter 2020
+                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                  <video controls poster="assets/projects/{{ project.path }}/video_poster.png">
+                    <source src="assets/projects/{{ project.path }}/video.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="container pt-5">
+                -->
+
+                <!-- Our team and poster view for lg and xl -->
+                <div class="d-none d-lg-block">
+                  <div [ngClass]="posterToggle ? 'teamCollapsed' : 'teamExpanded'">
+                    <div class="container pb-5">
+                      <div class="row justify-content-center">
+                        <div class="col-auto" *ngFor="let person of project.people">
+                          <p class="d-none d-xl-block"><img src="assets/projects/{{ project.path }}/{{ person.photo }}" alt="{{ person.name }}" style="max-height: 150px"/></p>
+                          <p class="d-none d-lg-block d-xl-none"><img src="assets/projects/{{ project.path }}/{{ person.photo }}" alt="{{ person.name }}" style="max-height: 80px"/></p>
+                          <p style="width: 0; overflow: visible" [innerHTML]="person.name"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                      <h3>Project Poster</h3>
+                      <p>(click to expand)</p>
+                    </div>
+                  </div>
+
+                  <p>
+                    <img
+                      src="assets/projects/{{ project.path }}/poster.png"
+                      (click)="posterToggle=!posterToggle"
+                      [ngClass]="posterToggle ? 'posterExpanded' : 'posterCollapsed'"
+                      style="cursor: pointer; display: block; margin: auto;"
+                      alt="Project Poster"
+                    />
+                  </p>
+                </div>
+                <!-- Only show the poster for less than lg -->
+                <div class="d-lg-none">
+                  <a href="assets/projects/{{ project.path }}/poster.png" target="_blank">
+                    <img
+                      src="assets/projects/{{ project.path }}/poster.png"
+                      width="100%"
+                      alt="Project Poster"
+                    />
+                  </a>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="row justify-content-center">
+            </div>
+        </div>
+        <div *ngIf="projectScreen=='designresearch'">
+          <h2>Design Research</h2>
+          <p>
+            <ng-container *ngFor="let person of project.people; last as isLast">
+              <span [innerHTML]="person.name"></span>
+              <span *ngIf="!isLast">, </span>
+            </ng-container>
+          </p>
+
+          <ng-container *ngIf="project.path=='chaser'">
+            <ng-container *ngTemplateOutlet="designresearch_chaser"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='doze'">
+            <ng-container *ngTemplateOutlet="designresearch_doze"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='feedo'">
+            <ng-container *ngTemplateOutlet="designresearch_feedo"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='fridgigotchi'">
+            <ng-container *ngTemplateOutlet="designresearch_fridgigotchi"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='guardia'">
+            <ng-container *ngTemplateOutlet="designresearch_guardia"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='mode'">
+            <ng-container *ngTemplateOutlet="designresearch_mode"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='pinpoint'">
+            <ng-container *ngTemplateOutlet="designresearch_pinpoint"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='pocketgrocer'">
+            <ng-container *ngTemplateOutlet="designresearch_pocketgrocer"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='pocketplanner'">
+            <ng-container *ngTemplateOutlet="designresearch_pocketplanner"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='poolbuddy'">
+            <ng-container *ngTemplateOutlet="designresearch_poolbuddy"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='procabulary'">
+            <ng-container *ngTemplateOutlet="designresearch_procabulary"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='reminice'">
+            <ng-container *ngTemplateOutlet="designresearch_reminice"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='stude'">
+            <ng-container *ngTemplateOutlet="designresearch_stude"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='tidy'">
+            <ng-container *ngTemplateOutlet="designresearch_tidy"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='vapeweight'">
+            <ng-container *ngTemplateOutlet="designresearch_vapeweight"></ng-container>
+          </ng-container>
+        </div>
+        <div *ngIf="projectScreen=='designprototyping'">
+          <h2>Design Prototyping</h2>
+          <p>
+            <ng-container *ngFor="let person of project.people; last as isLast">
+              <span [innerHTML]="person.name"></span>
+              <span *ngIf="!isLast">, </span>
+            </ng-container>
+          </p>
+
+          <ng-container *ngIf="project.path=='chaser'">
+            <ng-container *ngTemplateOutlet="designprototyping_chaser"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='doze'">
+            <ng-container *ngTemplateOutlet="designprototyping_doze"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='feedo'">
+            <ng-container *ngTemplateOutlet="designprototyping_feedo"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='fridgigotchi'">
+            <ng-container *ngTemplateOutlet="designprototyping_fridgigotchi"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='guardia'">
+            <ng-container *ngTemplateOutlet="designprototyping_guardia"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='mode'">
+            <ng-container *ngTemplateOutlet="designprototyping_mode"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='pinpoint'">
+            <ng-container *ngTemplateOutlet="designprototyping_pinpoint"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='pocketgrocer'">
+            <ng-container *ngTemplateOutlet="designprototyping_pocketgrocer"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='pocketplanner'">
+            <ng-container *ngTemplateOutlet="designprototyping_pocketplanner"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='poolbuddy'">
+            <ng-container *ngTemplateOutlet="designprototyping_poolbuddy"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='procabulary'">
+            <ng-container *ngTemplateOutlet="designprototyping_procabulary"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='reminice'">
+            <ng-container *ngTemplateOutlet="designprototyping_reminice"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='stude'">
+            <ng-container *ngTemplateOutlet="designprototyping_stude"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='tidy'">
+            <ng-container *ngTemplateOutlet="designprototyping_tidy"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="project.path=='vapeweight'">
+            <ng-container *ngTemplateOutlet="designprototyping_vapeweight"></ng-container>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+  </div>
+</ng-template>

@@ -1,0 +1,53 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.posterSessionImage
+{
+  max-width: 100%;
+  max-height: 400px;
+  border: 1px solid gray;
+}
+
+.projectThumbBox
+{
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.projectThumbImage
+{
+  max-width: 150px;
+  max-height: 150px;
+  border: 1px solid gray;
+}
+
+.posterCollapsed
+{
+  max-width: 400px;
+
+  transition: max-width .3s ease-out;
+}
+
+.posterExpanded
+{
+  max-width: 100%;
+
+  transition: max-width .3s ease-out;
+}
+
+.teamCollapsed
+{
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height .3s ease-out;
+}
+
+.teamExpanded
+{
+  max-height: 500px;
+  overflow: hidden;
+
+  transition: max-height .3s ease-out;
+}

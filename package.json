@@ -1,0 +1,6 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/cli": "^7.1.2"
+  }
+}

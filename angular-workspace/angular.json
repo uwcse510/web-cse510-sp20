@@ -1,0 +1,228 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular-workspace": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/browser",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              {
+                "input": "src/assets",
+                "glob": "**/*",
+                "ignore": [
+                ],
+                "output": "/assets/"
+              },
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "baseHref": "/courses/cse440/20wi/",
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-workspace:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-workspace:build:production"
+            }
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "src/tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-workspace:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [
+            ],
+            "assets": [
+              "src/favicon.ico",
+              {
+                "input": "src/assets",
+                "glob": "**/*",
+                "ignore": [
+                  "projects/**/*",
+                ],
+                "output": "/assets/"
+              },
+              "src/assets/projects/balance",
+              {
+                "input": "src/assets/projects/careercoach",
+                "glob": "**/*",
+                "ignore": [
+                  "**/fontawesome-free/**/*",
+                ],
+                "output": "/assets/projects/careercoach"
+              },
+              "src/assets/projects/careercoach/vendor/fontawesome-free",
+              "src/assets/projects/famitree",
+              "src/assets/projects/laundr",
+              {
+                "input": "src/assets/projects/lensy",
+                "glob": "**/*",
+                "ignore": [
+                  "**/fontawesome-free/**/*",
+                ],
+                "output": "/assets/projects/lensy"
+              },
+              "src/assets/projects/lensy/vendor/fontawesome-free",
+              "src/assets/projects/logera",
+              "src/assets/projects/melon",
+              {
+                "input": "src/assets/projects/mogo",
+                "glob": "**/*",
+                "ignore": [
+                  "**/fontawesome-free/**/*",
+                ],
+                "output": "/assets/projects/mogo"
+              },
+              "src/assets/projects/mogo/vendor/fontawesome-free",
+              "src/assets/projects/note",
+              {
+                "input": "src/assets/projects/pawsitive",
+                "glob": "**/*",
+                "ignore": [
+                  "**/fontawesome-free/**/*",
+                ],
+                "output": "/assets/projects/pawsitive"
+              },
+              "src/assets/projects/pawsitive/vendor/fontawesome-free",
+              "src/assets/projects/penguin",
+              "src/assets/projects/qualights",
+              "src/assets/projects/seek",
+              "src/assets/projects/switch",
+              {
+                "input": "src/assets/projects/wasteplacer",
+                "glob": "**/*",
+                "ignore": [
+                  "**/fontawesome-free/**/*",
+                ],
+                "output": "/assets/projects/wasteplacer"
+              },
+              "src/assets/projects/wasteplacer/vendor/fontawesome-free",
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "angular-workspace-e2e": {
+      "root": "e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "angular-workspace:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-workspace:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "angular-workspace"
+}
