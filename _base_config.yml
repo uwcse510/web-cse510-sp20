@@ -36,14 +36,14 @@ config:
       compose_up_delay: 60
 
   readme:
-    url_github: https://github.com/uwcse440/web-cse440-wi20
+    url_github: https://github.com/uwcse510/web-cse510-sp20
     url_github_readme: blob/master/README.md
     url_github_readme_basedir: blob/master/readme
 
-    travis_badge: '[![Build Status](https://travis-ci.org/uwcse440/web-cse440-wi20.svg?branch=master)](https://travis-ci.org/uwcse440/web-cse440-wi20)'
+    travis_badge: '[![Build Status](https://travis-ci.org/uwcse510/web-cse510-sp20.svg?branch=master)](https://travis-ci.org/uwcse510/web-cse510-wi20)'
 
-    working_directory_windows: c:\devel\web-cse440-wi20
-    working_directory_mac: ~/Desktop/web-cse440-wi20
+    working_directory_windows: c:\devel\web-cse510-wi20
+    working_directory_mac: ~/Desktop/web-cse510-wi20
 
     invoke_readme_frequent: []
 #      - build_production
@@ -91,12 +91,6 @@ config:
       - version: 8.12.0
         windows:
           installer_url: https://nodejs.org/dist/v8.12.0/node-v8.12.0-x64.msi
-
-    ruby_versions:
-      - version: 2.5.1
-        windows:
-          installer_url: https://github.com/oneclick/rubyinstaller2/releases/download/rubyinstaller-2.5.1-2/rubyinstaller-devkit-2.5.1-2-x86.exe
-          install_path: c:\Ruby251
 
     docker_toolbox_versions:
       - version: v18.09.1
