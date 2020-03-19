@@ -1,283 +1,212 @@
-<!--
 <div class="alert alert-danger">
 This page is still being migrated and developed. All content remains subject to change.
 </div>
--->
 
 ## Course Description
 
-This course provides an introduction to human-computer interaction and the design process.
-Students will learn methods and skills for designing and prototyping interactive systems.
-The course covers a design process from the initial formulation of a design problem to creation of digital prototypes.
-The course structure is a mix of lectures, classroom activities, and design critiques by peers and course staff.
-The course is overwhelmingly organized around a group project, in which students:
+This course provides an introduction to forms of contribution several major areas of research in Human-Computer Interaction (HCI).
+It is based in a combination of readings and discussion, a small statistics lab, and a self-defined project.
+The course readings will require preparing reports on a combination of historic framing papers and more recent contributions.
+This will help you examine what the HCI community considers a research contribution across a variety of problems,
+thus preparing you to understand and make meaningful research contributions in these and other areas of HCI.
 
-- Ideate and Propose Design Problems
-- Study Existing Practices and Challenges
-- Explore Potential Design Opportunities and Tradeoffs
-- Evaluate and Improve a Design
-- Communicate Their Problem and Resulting Design
+This course is explicitly not focused on the design methods commonly used in HCI practice.
+We do not assume a strong background in HCI (i.e., there is no undergraduate HCI prerequisite),
+but students seeking an introduction to effective design or the design process will be better served by CSE 440.
+
+The course project will require hands-on experience with HCI, while remaining open to different possibilities. 
+You might choose to design and implement a new piece of HCI technology, 
+or you might choose to design and execute an appropriately compelling study with HCI research implications.
+
+We will emphasize open discussion and feedback in all aspects of the course.
 
 ## Learning Objectives
 
-- Process-Focused Perspective on Interaction Design
-- Design Research Methods and Skills
-- Task-Focused Scenario Development, Sketching, and Storyboarding
-- Rapid Prototyping and Iteration
-- Critical Perspective on Design Solutions
+- Understand and be able to differentiate forms of research contribution in HCI
+- Gain understanding of prior fundamental results that now frame areas of HCI research
+- Gain understanding of articulating new contributions in such areas of HCI research
+- Gain understanding of common HCI research methods
 
 ## Course Staff
 
 <html>
-  <div class="row mb-3"> 
+  <div class="row">
     <div class="col-md-2">
-      <p><img src="assets/images/james_photo.jpg" height="140" alt="James Fogarty"/></p>
-      <p>[James Fogarty](https://homes.cs.washington.edu/~jfogarty/)</p>
+      <a href="//homes.cs.washington.edu/~jfogarty/">
+        <p>James Fogarty</p>
+        <p><img src="assets/images/james_photo.jpg" height="150" alt="James Fogarty"/></p>
+      </a>
     </div>
     <div class="col-md-2">
-      <p><img src="assets/images/qisheng_photo.jpg" height="140" alt="Qisheng Li"/></p>
-      <p>[Qisheng Li](https://homes.cs.washington.edu/~liqs/)</p>
-    </div>
-    <div class="col-md-2">
-      <p><img src="assets/images/jesse_photo.jpg" height="140" alt="Jesse Martinez"/></p>
-      <p>[Jesse Martinez](https://homes.cs.washington.edu/~jessejm/)</p>
-    </div>
-    <div class="col-md-2">
-      <p><img src="assets/images/richard_photo.jpg" height="140" alt="Richard Li"/></p>
-      <p>[Richard Li](https://lichard49.github.io/)<p>
-    </div>
-    <div class="col-md-2">
-      <p><img src="assets/images/jena_photo.jpg" height="140" alt="Jena McWhirter"/></p>
-      <p>[Jena McWhirter](https://www.jenamcwhirter.com/)</p>
+      <a href="https://www.microsoft.com/en-us/research/people/jinsuh/">
+        <p>Jina Suh</p>
+        <p><img src="assets/images/jina_photo.jpg" height="150" alt="Jina Suh"/></p>
+      </a>
     </div>
   </div>
 </html>
 
 ## Basic Information
 
-__Contact__:
+__Contact__: Email all instructors at cse510-staff [at] cs.washington.edu
 
-- Email course staff at cse440-staff [at] cs.washington.edu
+__Class Time & Location__: Tuesdays & Thursdays, 10:00-11:20
 
-__Class Time & Location__:
+`decide how to share Zoom info`
 
-- Tuesdays & Thursdays, 11:30-12:50 [NAN 181](https://uw.edu/maps/?nanoes)
+__Office Hours__: By appointment, and as scheduled for project meetings.
 
-Check the calendar for non-standard times or locations.
+## Readings
 
-__Section Times & Locations__:
+Assigned readings will focus on research topics, generally consisting of:
 
-- Fridays, 10:30-11:20 [MGH 295](https://uw.edu/maps/?mgh), with Qisheng and Jena
-- Fridays, 11:30-12:20 [MGH 295](https://uw.edu/maps/?mgh), with Qisheng and Jena
-- Fridays, 1:30-2:20 [MGH 295](https://uw.edu/maps/?mgh), with Jesse and Richard
-- Fridays, 2:30-3:20 [MGH 295](https://uw.edu/maps/?mgh), with Jesse and Richard
+- A _historic framing_ paper: presenting a theory, language, or understanding
+  that can contextualize the contributions of additional research.
 
-Check the calendar for non-standard times, locations, or staffing.
+- Two papers that provide _more recent or specific contributions_:
+  presenting the type of contribution you might initially be expected to attempt in your research.
 
-__Office Hours__:
+You are expected to read: (1) the historical framing paper, and (2) either of the more recent papers
+(in other words, whichever seems more compelling or interesting to you). You obviously may choose to read all three.
+The calendar will link to assigned readings and provide any day-specific revisions to this reading structure. 
 
-- James, Tuesdays, see calendar for time, [Allen 632](https://uw.edu/maps/?cse)
-- Qisheng, Wednesdays 10:00 to 11:00, [Allen 4th Floor Breakout](https://uw.edu/maps/?cse)
-- Jesse, Thursdays 2:00 to 3:00, [Allen 4th Floor Breakout](https://uw.edu/maps/?cse)
+You are expected to have read and considered the assigned readings prior to class,
+as the in-class discussions are a critical component of this course.
 
-Scheduled office hours require that you email beforehand (i.e., at least one hour beforehand).
-If nobody has emailed regarding the office hour, staff may not be present.
-Hours are scheduled most weeks, but check the calendar. Other meetings are by appointment.
+### Reading Reports
 
-## Project Theme
+To help prepare for an engaging and meaningful discussion, we require posting thoughts and questions beforehand.
+You can start a new discussion, participate in an existing discussion, or do a bit of both.
+You can discuss all of the assigned readings, or focus on a portion of the reading that you found most interesting. 
+The important part is that we can see intellectual effort in your forum participation, not just a simple paper summary.
 
-The theme for projects in this course is __self-tracking and everyday interaction with personal intelligences__.
+Reading reports are generally expected to be approximately 200 to 400 words.
+which may be in a single post or distributed across several posts related to a day's readings.
+We expect most will be short and focused on discussion points or questions,
+and posts that problematically exceed the upper limit or primarily summarize the reading itself will receive low grades.
+This aims to strike a balance between: 
+(1) enough text to convey a meaningful response, and 
+(2) succinct enough to allow review before class.
 
-People have long sought to better understand themselves, but continuing technology advances enable new approaches.
-Students will examine problems people encounter in gathering and gaining value from personal data,
-then explore how a combination of design and machine intelligence can 
-help go beyond simple data fetishes to help people in using personal data as part of reaching their goals.
+We will create Canvas discussion threads for each paper.
+If you have a thought or question that relates to multiple papers, post it wherever seems more appropriate.
 
-Understanding and designing for self-tracking is also known as personal informatics:
+Your participation in the forum discussion for each day will be graded on a scale from 0 to 3.
 
-<html>
-  <blockquote class="blockquote">
-    <p>
-      Personal informatics systems are systems that help people collect 
-      personally relevant information for the purpose of self-reflection and gaining self-knowledge.
-    </p>
-    <footer class="blockquote-footer">
-      [Li et al., 2010](readings/PersonalInformatics-Li2010.pdf).
-    </footer>
-  </blockquote>
-</html>
+- 0: If you do not participate.
+- 1: If your participation seems weak and does not convince us you read, understood, and considered the readings.
+- 2: If your participation shows you read and understood the readings and had something interesting to say.
+     This will be the most common grade.
+- 3: Reserved for especially insightful participation.
 
-Self-tracking and personal informatics are related to the [Quantified Self](http://quantifiedself.com/) movement, which describes itself as:
+It is generally easy to find something to criticize in any piece of research.
+But focusing exclusively on the potential flaws of research is generally not productive. 
+You will generally find it more intellectually worthwhile to focus on aspects of work that are particularly well done, 
+new ideas are prompted by a piece of work, or what you might have done differently if you conducted the research. 
+This will also lead to much more valuable discussions.
 
-<html>
-  <blockquote class="blockquote">
-    <p>
-      Self-knowledge through numbers.
-    </p>
-    <footer class="blockquote-footer">
-      [Gary Wolf, 2009](http://archive.wired.com/medtech/health/magazine/17-07/lbnp_knowthyself)
-    </footer>
-  </blockquote>
-</html>
+Potential topics for discussion are:
 
-Instead of limiting self-tracking to dashboards for an isolated self-analyst,
-consider the many different ways people might gather and interact with personal data,
-together with how machine intelligence might add meaningful value to these activities.
+- What idea or innovation enabled this, what more might be done based on that idea or innovation?
+- What new questions or research agendas are suggested by this research?
+- How might this research have informed some other research you have seen?
+- What aspects of this work were particularly well done or effective?
+- If you had conducted this research, what would you have done differently?
 
-Tracking can therefore take many forms:
+We also note that some papers will be presented by authors of those papers.
+Although we want everybody to be comfortable with open discussion,
+and we do not expect posts to be overly formal,
+this is another reason to be thoughtful in how you approach paper discussion.
 
-- wearable sensors
-- phone and watch applications
-- appliances and other artifacts in the environment
-- hybrid and multi-device forms (e.g., mobile capture with later annotation or review)
+Discussions will be coordinated using Canvas, with a post for each day:
 
-Tracking can include many social contexts:
+`if page.canvas.discussion != nil < page.canvas.discussion > else Link to be added endif`
 
-- people seeking help from peers (e.g., social sharing, support networks)
-- people seeking help from experts (e.g., health providers)
-- co-located relationships (e.g., families, friends, co-workers)
-- remote relationships (e.g., families, friends, co-workers)
-- communities organizing (e.g., people in a building, community volunteers)
+Reading reports are due at 11:59pm the night before each class meeting.
+This ensures time the next morning to review discussion before class.
+Submitting the day of class, just before class, or in class is therefore unacceptable and risks zero credit.
 
-Tracking can explore new forms of interaction:
+## Project
 
-- conversational interfaces
-- tangible interfaces
-- ubiquitous computing interfaces
+A course project will be a major component of your work. Details of the project are here:
 
-Any problem where people gather or seek value in personal data
-introduces opportunities and challenges in designing for effective interaction around that data.
-It can also present opportunities and challenges in 
-how integrated machine intelligence can provide meaningful value to that individual.
+`< site.url site.baseurl /assignments/project.html>`
 
-## Project Structure
+Dates are also linked from the course calendar.
 
-Projects are organized around four assignments, each consisting of several milestones:
+Some sample project ideas, gathered from faculty and researchers, have been made available here:
 
-- [Assignment 1 - Project Proposal](assignments/assignment1/)
-- [Assignment 2 - Getting the Right Design](assignments/assignment2/)
-- [Assignment 3 - Getting the Design Right](assignments/assignment3/)
-- [Assignment 4 - Communicating the Design](assignments/assignment4/)
+`< page.canvas.discussion_sample_projects >`
 
-## Samples from Prior Offerings
+You can also use that discussion identify potential project partners and to post your own ideas.
 
-Samples from prior offerings include:
+## Statistics Lab
 
-<app-assignment-samples sampleToLink="website" format="list-only"></app-assignment-samples>
+To aid in developing necessary skills, you will complete a small statistics lab using [R](//www.r-project.org/).
+The lab will walk you through analyzing an example data set,
+and you will then analyze two datasets from published research papers.
+
+You will gain basic familiarity with analyzing experiments using mixed‑model analyses of variance.
+Consistent with lecture, this assignment is not intended to provide complete knowledge of how to design
+or analyze experiments, which is far beyond the scope of one lecture or assignment.
+This assignment is instead focused on a pragmatic introduction to analyzing
+experiments based in designs you might later find useful.
+Please consider this assignment in the context of the material covered in lecture, as not all of it is repeated here.
+
+In addition to the lecture material and the contents of this assignment,
+you might benefit from working through all or part of
+Jacob Wobbrock's independent study in Practical Statistics for Human-Computer Interaction.
+
+<http://depts.washington.edu/aimgroup/proj/ps4hci/>
+
+### Download
+
+The assignment is available for download:
+
+`< site.url site.baseurl /assignments/statisticslab.zip>`
+
+### Submission
+
+`Due: page.due.stats .`
+
+Submit a ZIP archive including your document in PDF format and any additional files:
+
+`if page.canvas.stats_submit != nil < page.canvas.stats_submit > else Link to be added endif`
+
+## Exam
+
+An at-home open-book exam will give an opportunity to demonstrate and apply your understanding of course material in a more substantial format.
+It requires you to connect concepts across papers, serving as an evaluation of your understanding and critical thinking about course concepts.
+If you have kept pace with the readings, you will find this exam much easier to approach
+(e.g., simply referring back to readings, rather than needing to understand them from scratch).
+You may reference any of the articles, slides, notes, discussion posts, or other material readily available on the web.
+You may consult the course staff with any questions, but this is strictly an individual assignment (i.e., do not discuss it with others).
+
+### Submission
+
+`Due: page.due.exam .`
+
+` if page.canvas.exam_submit != nil < page.canvas.exam_submit > else Link to be added endif`
 
 ## Grading
 
-Strive to do good work because you care about your own opportunities to learn,
-including the opportunities this course provides working with a group in an intensive project.
-
 The overall course grade will be computed as follows:
 
-- __65%__: Group Project
-  - __3%__: Assignment 1, Project Proposal
-    - 1a: Proposal Brainstorm (0.5%)
-    - 1b: Project Proposal (2.5%)
-  - __20%__: Assignment 2, Getting the Right Design
-    - 2a: Design Ideation (graded as part of Participation)
-    - 2b: Design Research Plan (2%)
-    - 2c: Design Research Check-In (1%)
-    - 2d: Design Research Review (2%)
-    - 2e: Task Review (1%)
-    - 2f: Design Check-In (3%)
-    - 2g: Design Review (1%)
-    - 2web: Getting the Right Design (10%)
-  - __18%__: Assignment 3, Getting the Design Right
-    - 3a: Paper Prototype (2%)
-    - 3b: Heuristic Evaluation (graded as part of 3c)
-    - 3c: Usability Testing Check-In (2%)
-    - 3d: Usability Testing Review (2%)
-    - 3e: Digital Mockup (2%)
-    - 3web: Getting the Design Right (10%)
-  - __12%__: Assignment 4, Communicating the Design
-    - 4a: Initial Poster and Pitch (2%)
-    - 4b: Initial Video (2%)
-    - 4c: Final Poster and Pitch (4%)
-    - 4d: Final Video (4%)
-  - __12%__: Presentations
-    - 2p: Getting the Right Design Presentation (5%)
-    - 3p: Getting the Design Right Presentation (5%)
-    - Individual Presentation Score (2%)
-- __10%__: Participation
-- __25%__: Exam
+- 20%: Readings
+- 45%: Group Project
+  - 5%: Milestone 1 Report and Presentation
+  - 5%: Milestone 2 Report and Presentation
+  - 35%: Final Report
+- 10%: Statistics Lab
+- 15%: Exam
+- 10%: Participation
 
-Each assignment will also provide a point breakdown intended to convey how it will be graded.
-Design is an inherently subjective practice, and so grading in this course is necessarily subjective.
-The stated project requirements are the minimum, 
-intended to leave room for groups to earn strong grades through strong work.
+Much of the grading in this course is necessarily subjective.
+We will attempt to communicate expectations and feedback throughout the course,
+but it is your responsibility to communicate with us if you would like guidance in this regard.
 
-Because the course is designed around feedback on project milestones, grades given to those milestones indicate
-that you have invested sufficient effort and insight at the time of the milestone.
-You will get feedback and are expected to continue acting upon that feedback in your design process.
-The bulk of project grades is therefore attached to the final deliverables, which are evaluated on their quality.
-
-## Submission
-
-Many assignments are due "the night before class". We will implement this in Canvas as 11:59pm.
-
-This is a fast-paced course, with many elements of the project depending on prior elements.
-Similarly, the course staff's ability to give feedback relies on timely submissions
-(e.g., course staff will often review your submission in the morning before section).
-Submitting the day of class, just before class, or in class is therefore generally unacceptable.
-Course staff will attempt to be flexible where appropriate, but any late submission risks receiving zero credit.
-
-Submissions will generally be in PDF format (i.e., not plain text, not Word).
-The PDF should be printable, containing everything we need to review and grade the assignment (e.g., your name).
-The course staff has a large number of submissions to manage, so format and completeness issues are problematic.
-
-## Groups and Contribution
-
-We expect groups to take collective responsibility and to resolve any coordination issues.
-The course staff is always happy to make suggestions with regard to your effort and coordination.
-If an issue needs to be raised with the course staff, we expect it to be raised early enough to be addressed.
-
-In addition to encouraging groups to be pro-active, we make several efforts to capture contribution:
-
-- We will take attendance in lectures and sections that include a project-related activity.
-  The project and your commitment to your group are a key component of this course.
-  If you will need to be absent, email your group and the course staff beforehand.
-- We will collect contribution statements throughout the project sequence.
-- We will collect confidential group feedback at two major points in the project sequence.
-
-This information will be factored into an individual's grade for Participation.
-If necessary, we may also further adjust an individual's grade for the Group Project.
-
-### Contribution Statements
-
-Group submissions will require a contribution statement.
-This statement should indicate the name of each member of your team, 
-the percentage of effort that each member contributed in that specific assignment,
-and a corresponding list of specific activities. 
-An example contribution statement might be:
-
-- *Name 1*: 40%, researched the background of the problem, outlined the content of the document, wrote the first version of one paragraph, selected the images to be included
-- *Name 2*: 15%, conducted 3 interviews (with *Name 4*) and took notes
-- *Name 3*: 20%, wrote the first version of the background section, made sure the final document was submitted
-- *Name 4*: 25%, organized the group meeting, conducted 3 interviews (with *Name 2*), put together the first draft of the document's results section
-
-Contribution statements should be submitted together with your milestone submission,
-as a separate PDF using the Canvas "Add Another File" capability.
-When a contribution statement is required, we will not grade submissions until the contribution statement is provided.
-
-You should discuss and agree upon this statement of what you each contributed and how much this contributed to the overall assignment.
-
-Contribution statements are intended to support your own reflection as a team as well as staff awareness of your efforts. 
-The staff does not necessarily expect each person to contribute equally to each assignment, 
-but does expect all members will appropriately contribute over the quarter and will work as a team to support each other.
-The staff also understands that percentages are incomplete and subjective, 
-so we gather them only as a summary indication and will not use them directly in any grade calculation.
-
-If you feel your team's contribution statement does not appropriately convey team contributions, you may email the course staff.
-If you feel a member of your team is not contributing appropriately, you may email the course staff.
-
-### Group Feedback
-
-Course staff will request confidential group feedback at the midpoint and the conclusion of the project sequence.
-
-Submit this using the form distributed to the class by email.
+Project milestone grading will emphasize progress and preparation to engage with direction and feedback.
+Final project report grading will then consider overall execution.
 
 ## Accommodations and Additional University Policies
 
@@ -288,10 +217,8 @@ Additional university policies apply
 
 Please do not hesitate to contact the course staff regarding these or any other accommodations.
 
-## Course Website
+## Contributing
 
 This course website lives on GitHub:
 
-<p>[https://github.com/uwcse440/web-cse440-wi20](https://github.com/uwcse440/web-cse440-wi20)</p>
-
-You can submit pull requests to update the website, and you will publish elements of your project to the website via pull request.
+<https://github.com/uwcse510/web-cse510-sp20>
