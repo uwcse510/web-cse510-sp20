@@ -46,7 +46,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "baseHref": "/courses/cse440/20wi/",
+              "baseHref": "/courses/cse510/20sp/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -119,65 +119,9 @@
                 "input": "src/assets",
                 "glob": "**/*",
                 "ignore": [
-                  "projects/**/*",
                 ],
                 "output": "/assets/"
               },
-              "src/assets/projects/balance",
-              {
-                "input": "src/assets/projects/careercoach",
-                "glob": "**/*",
-                "ignore": [
-                  "**/fontawesome-free/**/*",
-                ],
-                "output": "/assets/projects/careercoach"
-              },
-              "src/assets/projects/careercoach/vendor/fontawesome-free",
-              "src/assets/projects/famitree",
-              "src/assets/projects/laundr",
-              {
-                "input": "src/assets/projects/lensy",
-                "glob": "**/*",
-                "ignore": [
-                  "**/fontawesome-free/**/*",
-                ],
-                "output": "/assets/projects/lensy"
-              },
-              "src/assets/projects/lensy/vendor/fontawesome-free",
-              "src/assets/projects/logera",
-              "src/assets/projects/melon",
-              {
-                "input": "src/assets/projects/mogo",
-                "glob": "**/*",
-                "ignore": [
-                  "**/fontawesome-free/**/*",
-                ],
-                "output": "/assets/projects/mogo"
-              },
-              "src/assets/projects/mogo/vendor/fontawesome-free",
-              "src/assets/projects/note",
-              {
-                "input": "src/assets/projects/pawsitive",
-                "glob": "**/*",
-                "ignore": [
-                  "**/fontawesome-free/**/*",
-                ],
-                "output": "/assets/projects/pawsitive"
-              },
-              "src/assets/projects/pawsitive/vendor/fontawesome-free",
-              "src/assets/projects/penguin",
-              "src/assets/projects/qualights",
-              "src/assets/projects/seek",
-              "src/assets/projects/switch",
-              {
-                "input": "src/assets/projects/wasteplacer",
-                "glob": "**/*",
-                "ignore": [
-                  "**/fontawesome-free/**/*",
-                ],
-                "output": "/assets/projects/wasteplacer"
-              },
-              "src/assets/projects/wasteplacer/vendor/fontawesome-free",
             ]
           }
         },
