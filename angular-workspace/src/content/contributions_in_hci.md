@@ -12,7 +12,7 @@ Read the framing paper:
 
 Below are examples of CHI 2019 papers that correspond to Wobbrock’s types of research contribution in HCI.
 
-Select two to review, focusing on papers that are most likely to correspond to the contribution style(s) relevant in your potential project(s). 
+Select two additional readings to review, focusing on papers that are most likely to correspond to the contribution style(s) relevant in your potential project(s). 
 You should not focus on the details of these papers, but rather their organization of the research and how it is presented. 
 We include these to provide concrete examples of the contributions, but our in-class discussion will focus on the framing paper.
 

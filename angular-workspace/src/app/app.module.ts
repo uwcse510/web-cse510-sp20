@@ -16,6 +16,7 @@ import { AssignmentDueTextComponent } from './assignment-due-text/assignment-due
 import { AssignmentSubmissionLinkComponent } from './assignment-submission-link/assignment-submission-link.component';
 import { ContentComponent } from './content/content.component';
 import { ReadingComponent } from './reading/reading.component';
+import { AssignmentsComponent } from './assignments/assignments.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ReadingComponent } from './reading/reading.component';
     GeneratedLinkComponent,
     NavbarComponent,
 
+    AssignmentsComponent,
     CalendarComponent,
     HomeComponent,
 
