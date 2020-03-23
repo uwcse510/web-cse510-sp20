@@ -25,3 +25,14 @@ div.app-main {
   margin: 10px;
   padding: 10px 20px;
 }
+
+/* Replicating this because of view encapsulation */
+.calendar {
+  h2 {
+    font-size: $h4-font-size;
+  }
+
+  h3 {
+    font-size: $h5-font-size;
+  }
+}

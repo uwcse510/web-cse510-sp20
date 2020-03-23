@@ -11,8 +11,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { CalendarComponent } from './calendar/calendar.component';
 import { HomeComponent } from './home/home.component';
+
 import { AssignmentDueTextComponent } from './assignment-due-text/assignment-due-text.component';
 import { AssignmentSubmissionLinkComponent } from './assignment-submission-link/assignment-submission-link.component';
+import { ContentComponent } from './content/content.component';
+import { ReadingComponent } from './reading/reading.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,8 @@ import { AssignmentSubmissionLinkComponent } from './assignment-submission-link/
 
     AssignmentDueTextComponent,
     AssignmentSubmissionLinkComponent,
+    ContentComponent,
+    ReadingComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'angular-workspace'}),
