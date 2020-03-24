@@ -27,12 +27,16 @@ interface Date {
 }
 
 class CalendarData {
-  dueExam = 'Uploaded by 11:59pm ' + moment('2020-06-08', 'YYYY-MM-DD').format('dddd, MMMM d');
+  availableExam = 'Before 11:59pm ' + moment('2020-06-05', 'YYYY-MM-DD').format('dddd, MMMM D');
+  dueExam = 'Uploaded by 11:59pm ' + moment('2020-06-08', 'YYYY-MM-DD').format('dddd, MMMM D');
 
-  dueProjectProposal = 'Uploaded by 11:59pm ' + moment('2020-04-15', 'YYYY-MM-DD').format('dddd, MMMM d');
-  dueProjectMilestone1 = 'Uploaded by 11:59pm ' + moment('2020-05-5', 'YYYY-MM-DD').format('dddd, MMMM d');
-  dueProjectMilestone2 = 'Uploaded by 11:59pm ' + moment('2020-05-27', 'YYYY-MM-DD').format('dddd, MMMM d');
-  dueProjectReport = 'Uploaded by 11:59pm ' + moment('2020-06-11', 'YYYY-MM-DD').format('dddd, MMMM d');
+  dueProjectProposal = 'Uploaded by 11:59pm ' + moment('2020-04-15', 'YYYY-MM-DD').format('dddd, MMMM D') +
+                       ' for in-class presentations ' + moment('2020-04-16', 'YYYY-MM-DD').format('dddd, MMMM D');
+  dueProjectMilestone1 = 'Uploaded by 11:59pm ' + moment('2020-05-6', 'YYYY-MM-DD').format('dddd, MMMM D') +
+                         ' for in-class presentations ' + moment('2020-05-07', 'YYYY-MM-DD').format('dddd, MMMM D');
+  dueProjectMilestone2 = 'Uploaded by 11:59pm ' + moment('2020-05-27', 'YYYY-MM-DD').format('dddd, MMMM D') +
+                         ' for in-class presentations ' + moment('2020-05-28', 'YYYY-MM-DD').format('dddd, MMMM D');
+  dueProjectReport = 'Uploaded by 11:59pm ' + moment('2020-06-11', 'YYYY-MM-DD').format('dddd, MMMM D');
 
   dueStatisticsLab = null;
 
@@ -81,7 +85,7 @@ class CalendarData {
           authorText: 'Roy Want, Andy Hopper, Veronica Falcão, Jonathan Gibbons',
           title: 'The Active Badge Location System',
           publicationText: 'TOIS 1992',
-          link: 'https://canvas.uw.edu/files/63210286/download?download_frd=1'
+          link: 'https://canvas.uw.edu/files/63210285/download?download_frd=1'
         },
         {
           authorText: 'James D. Hollan, Scott Stornetta',
@@ -426,6 +430,12 @@ class CalendarData {
       contentNonstandard: 'readings_tbd',
     },
     // Finals Week
+    {
+      date: moment('2020-06-05', 'YYYY-MM-DD'),
+
+      name: 'Exam Available',
+      contentNonstandard: 'available_exam',
+    },
     {
       date: moment('2020-06-08', 'YYYY-MM-DD'),
 

@@ -60,15 +60,11 @@ export const RENDERING_DATA: MarkdownRenderingData[] = [
         'statisticslab'
       ),
       //
-      // Content for readings
+      // Content for calendar
       //
       new MarkdownRenderingPair(
-        'src/content/chi2020.md',
-        'chi2020'
-      ),
-      new MarkdownRenderingPair(
-        'src/content/contributions_in_hci.md',
-        'contributions_in_hci'
+        'src/content/available_exam.md',
+        'available_exam'
       ),
       new MarkdownRenderingPair(
         'src/content/due_exam.md',
@@ -83,16 +79,27 @@ export const RENDERING_DATA: MarkdownRenderingData[] = [
         'due_statisticslab'
       ),
       new MarkdownRenderingPair(
-        'src/content/no_reading.md',
-        'no_reading'
-      ),
-      new MarkdownRenderingPair(
         'src/content/project_milestone.md',
         'project_milestone'
       ),
       new MarkdownRenderingPair(
         'src/content/project_proposal.md',
         'project_proposal'
+      ),
+      //
+      // Content for readings
+      //
+      new MarkdownRenderingPair(
+        'src/content/chi2020.md',
+        'chi2020'
+      ),
+      new MarkdownRenderingPair(
+        'src/content/contributions_in_hci.md',
+        'contributions_in_hci'
+      ),
+      new MarkdownRenderingPair(
+        'src/content/no_reading.md',
+        'no_reading'
       ),
       new MarkdownRenderingPair(
         'src/content/readings_tbd.md',

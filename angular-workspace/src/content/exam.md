@@ -13,6 +13,10 @@ If you have kept pace with the readings, you will find this exam much easier to 
 You may reference any of the articles, slides, notes, discussion posts, or other material readily available on the web.
 You may consult the course staff with any questions, but this is strictly an individual assignment (i.e., do not discuss it with others).
 
+### Exam Availability
+
+The exam will be made available to the class via email {{ site.calendar.availableExam }}.
+
 ### Submission
 
 <app-assignment-due-text dueText="{{ site.calendar.dueExam }}"></app-assignment-due-text>

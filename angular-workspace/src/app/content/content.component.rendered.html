@@ -34,6 +34,8 @@ If you have kept pace with the readings, you will find this exam much easier to 
 (e.g., simply referring back to readings, rather than needing to understand them from scratch).
 You may reference any of the articles, slides, notes, discussion posts, or other material readily available on the web.
 You may consult the course staff with any questions, but this is strictly an individual assignment (i.e., do not discuss it with others).</p>
+<h3 id="exam-availability">Exam Availability</h3>
+<p>The exam will be made available to the class via email {{ site.calendar.availableExam }}.</p>
 <h3 id="submission">Submission</h3>
 <p><app-assignment-due-text dueText="{{ site.calendar.dueExam }}"></app-assignment-due-text></p>
 <p>Submit your exam in PDF format:</p>
@@ -283,6 +285,48 @@ Jacob Wobbrock's independent study in Practical Statistics for Human-Computer I
 <p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitStatisticsLab }}"></app-assignment-submission-link></p>
 </ng-template>
 
+<ng-template #available_exam>
+<div class="alert alert-primary">
+Available: <app-generated-link linkHREF="/assignments/exam">Exam</app-generated-link>
+</div>
+</ng-template>
+
+<ng-template #due_exam>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/exam">Exam</app-generated-link>
+</div>
+</ng-template>
+
+<ng-template #due_project_final_report>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/project#final-report">Project Final Report</app-generated-link>
+</div>
+</ng-template>
+
+<ng-template #due_statisticslab>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/statisticslab">Statistics Lab</app-generated-link>
+</div>
+</ng-template>
+
+<ng-template #project_milestone>
+<div class="alert alert-danger">
+Class May Be Extended to Accommodate Presentations
+</div>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/project/#milestone-reports">Project Milestone</app-generated-link>
+</div>
+</ng-template>
+
+<ng-template #project_proposal>
+<div class="alert alert-danger">
+Class May Be Extended to Accommodate Presentations
+</div>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/project/#proposal">Project Proposal</app-generated-link>
+</div>
+</ng-template>
+
 <ng-template #chi2020>
 <p>CHI 2020 virtual conference activities TBD.</p>
 </ng-template>
@@ -392,44 +436,8 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>No reading report is assigned.</p>
 </ng-template>
 
-<ng-template #due_exam>
-<div class="alert alert-primary">
-Due: <app-generated-link linkHREF="/assignments/exam">Exam</app-generated-link>
-</div>
-</ng-template>
-
-<ng-template #due_project_final_report>
-<div class="alert alert-primary">
-Due: <app-generated-link linkHREF="/assignments/project#final-report">Project Final Report</app-generated-link>
-</div>
-</ng-template>
-
-<ng-template #due_statisticslab>
-<div class="alert alert-primary">
-Due: <app-generated-link linkHREF="/assignments/statisticslab">Statistics Lab</app-generated-link>
-</div>
-</ng-template>
-
 <ng-template #no_reading>
 <p>No reading is assigned.</p>
-</ng-template>
-
-<ng-template #project_milestone>
-<div class="alert alert-danger">
-Class May Be Extended to Accommodate Presentations
-</div>
-<div class="alert alert-primary">
-Due: <app-generated-link linkHREF="/assignments/project/#milestone-reports">Project Milestone</app-generated-link>
-</div>
-</ng-template>
-
-<ng-template #project_proposal>
-<div class="alert alert-danger">
-Class May Be Extended to Accommodate Presentations
-</div>
-<div class="alert alert-primary">
-Due: <app-generated-link linkHREF="/assignments/project/#proposal">Project Proposal</app-generated-link>
-</div>
 </ng-template>
 
 <ng-template #readings_tbd>
@@ -496,6 +504,9 @@ Because some of these papers are quite long, you can and should skim according t
 </ng-container>
 
 <!-- Content for readings -->
+<ng-container *ngIf="contentName=='available_exam'">
+  <ng-container *ngTemplateOutlet="available_exam"></ng-container>
+</ng-container>
 <ng-container *ngIf="contentName=='chi2020'">
   <ng-container *ngTemplateOutlet="chi2020"></ng-container>
 </ng-container>

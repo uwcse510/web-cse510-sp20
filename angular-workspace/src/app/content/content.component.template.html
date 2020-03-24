@@ -16,6 +16,9 @@
 </ng-container>
 
 <!-- Content for readings -->
+<ng-container *ngIf="contentName=='available_exam'">
+  <ng-container *ngTemplateOutlet="available_exam"></ng-container>
+</ng-container>
 <ng-container *ngIf="contentName=='chi2020'">
   <ng-container *ngTemplateOutlet="chi2020"></ng-container>
 </ng-container>
