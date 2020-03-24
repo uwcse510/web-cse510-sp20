@@ -36,3 +36,7 @@ div.app-main {
     font-size: $h5-font-size;
   }
 }
+
+ul + p {
+    margin-top: $paragraph-margin-bottom;
+}

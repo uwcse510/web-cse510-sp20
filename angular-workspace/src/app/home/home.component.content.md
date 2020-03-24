@@ -63,7 +63,7 @@ We will emphasize open discussion and feedback in all aspects of the course.
   </dt>
   <dd>
     <p>Tuesdays & Thursdays, 10:00-11:20.</p>
-    <p>Conducted via Zoom, meeting information distributed via email.</p>
+    <p>Conducted via Zoom, using meeting information distributed via email.</p>
   </dd>
   
   <dt>

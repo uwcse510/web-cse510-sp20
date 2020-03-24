@@ -1,6 +1,8 @@
+<!--
 <div class="alert alert-danger" markdown="1">
 This page is still being migrated and developed. All content remains subject to change.
 </div>
+-->
 
 ## Readings and Reading Reports
 
@@ -64,7 +66,7 @@ this is another reason to be thoughtful in how you approach paper discussion.
 
 Discussions will be coordinated using Canvas:
 
-`if page.canvas.discussion != nil < page.canvas.discussion > else Link to be added endif`
+<app-assignment-submission-link linkSubmission="{{ site.linkDiscussion }}"></app-assignment-submission-link>
 
 We will create a post for each day and a discussion thread for each paper.
 If you have a thought or question that relates to multiple papers, post it wherever seems more appropriate.

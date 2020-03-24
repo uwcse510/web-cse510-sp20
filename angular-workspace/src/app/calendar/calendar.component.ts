@@ -2,7 +2,7 @@ import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { calendar as CalendarData} from '../../data/calendardata';
+import { site as SiteData} from '../../data/sitedata';
 
 @Component({
   selector: 'app-calendar',
@@ -10,7 +10,7 @@ import { calendar as CalendarData} from '../../data/calendardata';
   styleUrls: ['./calendar.component.scss']
 })
 export class CalendarComponent implements AfterViewInit, OnInit {
-  calendar = CalendarData;
+  site = SiteData;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,

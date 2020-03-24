@@ -2,12 +2,16 @@ import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
+import { site as SiteData} from '../../data/sitedata';
+
 @Component({
   selector: 'app-assignments',
   templateUrl: './assignments.component.rendered.html',
   styleUrls: ['./assignments.component.scss']
 })
 export class AssignmentsComponent implements AfterViewInit, OnInit {
+  site = SiteData;
+
   assignment: string;
 
   constructor(

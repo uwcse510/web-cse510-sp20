@@ -36,7 +36,9 @@ export const RENDERING_DATA: MarkdownRenderingData[] = [
   new MarkdownRenderingData(
     'src/app/content/content.component',
     [
+      //
       // Content for assignments
+      //
       new MarkdownRenderingPair(
         'src/content/assignments.md',
         'assignments'
@@ -57,14 +59,44 @@ export const RENDERING_DATA: MarkdownRenderingData[] = [
         'src/content/statisticslab.md',
         'statisticslab'
       ),
+      //
       // Content for readings
+      //
+      new MarkdownRenderingPair(
+        'src/content/chi2020.md',
+        'chi2020'
+      ),
       new MarkdownRenderingPair(
         'src/content/contributions_in_hci.md',
         'contributions_in_hci'
       ),
       new MarkdownRenderingPair(
+        'src/content/due_exam.md',
+        'due_exam'
+      ),
+      new MarkdownRenderingPair(
+        'src/content/due_project_final_report.md',
+        'due_project_final_report'
+      ),
+      new MarkdownRenderingPair(
+        'src/content/due_statistics_lab.md',
+        'due_statisticslab'
+      ),
+      new MarkdownRenderingPair(
         'src/content/no_reading.md',
         'no_reading'
+      ),
+      new MarkdownRenderingPair(
+        'src/content/project_milestone.md',
+        'project_milestone'
+      ),
+      new MarkdownRenderingPair(
+        'src/content/project_proposal.md',
+        'project_proposal'
+      ),
+      new MarkdownRenderingPair(
+        'src/content/readings_tbd.md',
+        'readings_tbd'
       ),
       new MarkdownRenderingPair(
         'src/content/visions_of_hci.md',

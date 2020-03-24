@@ -22,9 +22,11 @@ the group project is defined in terms of a proposal, a pair of self-defined mile
 </ng-template>
 
 <ng-template #exam>
+<!--
 <div class="alert alert-danger" markdown="1">
 This page is still being migrated and developed. All content remains subject to change.
 </div>
+-->
 <h2 id="exam">Exam</h2>
 <p>An at-home open-book exam will give an opportunity to demonstrate and apply your understanding of course material in a more substantial format.
 It requires you to connect concepts across course readings, serving as an evaluation of your understanding and critical thinking about course concepts.
@@ -33,20 +35,23 @@ If you have kept pace with the readings, you will find this exam much easier to 
 You may reference any of the articles, slides, notes, discussion posts, or other material readily available on the web.
 You may consult the course staff with any questions, but this is strictly an individual assignment (i.e., do not discuss it with others).</p>
 <h3 id="submission">Submission</h3>
-<p><code>Due: page.due.exam .</code></p>
-<p><code> if page.canvas.exam_submit != nil &lt; page.canvas.exam_submit &gt; else Link to be added endif</code></p>
+<p><app-assignment-due-text dueText="{{ site.calendar.dueExam }}"></app-assignment-due-text></p>
+<p>Submit your exam in PDF format:</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitExam }}"></app-assignment-submission-link></p>
 </ng-template>
 
 <ng-template #project>
+<!--
 <div class="alert alert-danger" markdown="1">
 This page is still being migrated and developed. All content remains subject to change.
 </div>
+-->
 <h2 id="project">Project</h2>
 <p>A course project will be a major component of your work.
 This will require hands-on experience with HCI, while remaining open to different possibilities.</p>
 <p>Because we assume you are new to HCI research, we do not necessarily expect you to produce publishable work.
-Instead, the expectation is that you will do something <em>interesting</em>.
-It is then up to you to define <em>interesting</em> according to what you want to accomplish in this project, while seeking appropriate feedback from staff.
+Instead, the expectation is that you will do something interesting.
+It is then up to you to define interesting according to what you want to accomplish in this project, while seeking appropriate feedback from staff.
 For example, you might choose to:</p>
 <ul>
 <li>Design and implement a new piece of HCI technology.</li>
@@ -60,27 +65,17 @@ We will consider groups of two, and we will generally not allow individual proje
 Working in groups is a necessary part of doing research, and it is also important for the logistics of this course.</p>
 <h3 id="project-ideas">Project Ideas</h3>
 <p>Some sample project ideas, gathered from faculty and researchers, have been made available here:</p>
-<p><code>&lt; page.canvas.discussion_sample_projects &gt;</code></p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkProjectProposalIdeas }}"></app-assignment-submission-link></p>
 <p>You can also use that discussion to identify potential project partners and to post your own ideas.</p>
-<h3 id="sample-project-proposals">Sample Project Proposals</h3>
-<p>Sample project proposals from prior offerings have been made available here:</p>
-<p><code>&lt;https://canvas.uw.edu/courses/1249568/files/folder/project_samples&gt;</code></p>
-<h3 id="early-feedback">Early Feedback</h3>
-<p>Course staff will be available to meet and provide early feedback as desired.</p>
-<p>Meeting is optional.
-You can also email to request feedback or to inquire about arranging another time to meet.
-Sign up for the reserved meeting times here:</p>
-<p><code>&lt;https://calendar.google.com/calendar/selfsched?sstoken=UUhkV1oxenFvQmdqfGRlZmF1bHR8NTczYzFkZjQ3OTFiMmNiZTcwZmY4NzZmY2Q3OGNlYzg&gt;</code></p>
-<h3 id="project-deliverables">Project Deliverables</h3>
-<p>Project deliverables are defined in terms of a proposal, a pair of self-defined milestones, and a final report.
-These are due:</p>
+<h2 id="project-deliverables">Project Deliverables</h2>
+<p>Project deliverables are defined in terms of a proposal, a pair of self-defined milestones, and a final report.</p>
 <ul>
-<li>Proposal:       <code>page.due.proposal</code></li>
-<li>Milestone:      <code>page.due.milestone1</code></li>
-<li>Milestone:      <code>page.due.milestone2</code></li>
-<li>Final Report:   <code>page.due.finalreport</code></li>
+<li>Proposal:       <app-assignment-due-text dueText="{{ site.calendar.dueProjectProposal }}"></app-assignment-due-text></li>
+<li>Milestone 1:    <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone1 }}"></app-assignment-due-text></li>
+<li>Milestone 2:    <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone2 }}"></app-assignment-due-text></li>
+<li>Final Report:   <app-assignment-due-text dueText="{{ site.calendar.dueProjectReport }}"></app-assignment-due-text></li>
 </ul>
-<h4 id="proposal">Proposal</h4>
+<h2 id="proposal">Proposal</h2>
 <p>Your proposal will define your initial plan for this project.
 You can and should update this plan based on feedback, progress, and findings.
 The proposal therefore needs to demonstrate a robust initial plan for your project,
@@ -89,7 +84,7 @@ but your project is expected to evolve as appropriate and necessary.</p>
 However, it is critical to define what you will specifically accomplish in the course project.
 The course project must stand on its own even if drawn from a larger research context.</p>
 <p>Proposals consist of a short document and a short in-class presentation.</p>
-<h5 id="document">Document</h5>
+<h3 id="proposal-document">Proposal Document</h3>
 <p>Prepare a 1 page document addressing the following points:</p>
 <ul>
 <li>
@@ -115,47 +110,58 @@ Explain what aspects of the project you might choose to ignore or defer in this 
 This is your opportunity to scope the project appropriately for this course.</p>
 </li>
 </ul>
-<h5 id="presentation">Presentation</h5>
+<h3 id="proposal-presentation">Proposal Presentation</h3>
 <p>Prepare a presentation consisting of 3 to 4 slides. Each group will give a short in-class presentation.</p>
 <p>This is an opportunity for feedback from staff and classmates.
 Your presentation should cover the same information as the document.
 Our primary goal is feedback, not a formal presentation. Please be appropriately candid, thoughtful, and engaged.</p>
-<h5 id="submission">Submission</h5>
-<p>Due: <code>page.due.proposal</code></p>
-<p>Submit your proposal document in PDF format:</p>
-<p><code>&lt; page.canvas.proposal_doc &gt;</code></p>
-<p>Submit your proposal presentation in PDF, PPT, or PPTX format:</p>
-<p><code>&lt; page.canvas.proposal_pres &gt;</code></p>
+<h3 id="proposal-samples">Proposal Samples</h3>
+<p>Sample project proposals from prior offerings have been made available here:</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkProjectProposalSamples }}"></app-assignment-submission-link></p>
+<h3 id="proposal-early-feedback">Proposal Early Feedback</h3>
+<p>Course staff will be available to meet and provide early feedback as desired.</p>
+<p>Meeting is optional.
+You can also email to request feedback or to inquire about arranging another time to meet.
+Sign up for the reserved meeting times here:</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkProjectProposalEarlyFeedback }}"></app-assignment-submission-link></p>
+<h3 id="proposal-submission">Proposal Submission</h3>
+<p><app-assignment-due-text dueText="{{ site.calendar.dueProjectProposal }}"></app-assignment-due-text></p>
+<p>Submit your proposal document in PDF format and your proposal presentation in PDF, PPT, or PPTX format.</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitProjectProposal }}"></app-assignment-submission-link></p>
 <p>Be sure to consider guidance on <app-generated-link linkHREF="http://interactions.acm.org/archive/view/july-august-2017/making-your-presentation-accessible">Making Your Presentation Accessible</app-generated-link>.</p>
-<h4 id="milestone-reports">Milestone Reports</h4>
+<h2 id="milestone-reports">Milestone Reports</h2>
 <p>Two milestone reports serve as a check on the trajectory of your project
 and an opportunity for feedback and guidance from staff and classmates.
 Convey the state of your project and your plans for the remainder of the quarter.</p>
 <p>Milestone reports consist of a short document and a short in-class presentation.</p>
-<h5 id="document-2">Document</h5>
+<h3 id="milestone-document">Milestone Document</h3>
 <p>Prepare a 1 page document addressing the following points:</p>
 <ul>
 <li>What you have done for this milestone, discussing current progress relative to previously stated plans.</li>
 <li>What you will do before your next milestone, including any revisions based on your status or findings.</li>
 <li>Any areas where you could use advice or are blocked.</li>
 </ul>
-<h5 id="presentation-2">Presentation</h5>
+<h3 id="milestone-presentation">Milestone Presentation</h3>
 <p>Prepare a presentation consisting of 3 to 4 slides. Each group will give a short in-class presentation.</p>
 <p>This is an opportunity for feedback from staff and classmates.
 Your presentation should cover the same information as the document.
 Our primary goal is feedback, not a formal presentation. Please be appropriately candid, thoughtful, and engaged.</p>
-<h5 id="submission-2">Submission</h5>
-<p>Due: <code>page.due.milestone1</code> and <code>page.due.milestone2</code>.</p>
+<h3 id="milestone-submission">Milestone Submission</h3>
+<p>Milestone 1 <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone1 }}"></app-assignment-due-text></p>
+<p>Milestone 2 <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone2 }}"></app-assignment-due-text></p>
+<p>Submit your milestone document in PDF format and your milestone presentation in PDF, PPT, or PPTX format.</p>
 <ul>
-<li>Milestone 1 document: <code>&lt;page.canvas.milestone1_doc &gt;</code></li>
-<li>Milestone 1 presentation: <code>&lt; page.canvas.milestone1_pres &gt;</code></li>
-<li>Milestone 2 document: <code>&lt; page.canvas.milestone2_doc &gt;</code></li>
-<li>Milestone 2 presentation: <code>&lt; page.canvas.milestone2_pres &gt;</code></li>
+<li>
+<p>Milestone 1 document and presentation:</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitProjectMilestone1 }}"></app-assignment-submission-link></p>
+</li>
+<li>
+<p>Milestone 2 document and presentation:</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitProjectMilestone2 }}"></app-assignment-submission-link></p>
+</li>
 </ul>
-<p>Submit your milestone document in PDF format.</p>
-<p>Submit your milestone presentation in PDF, PPT, or PPTX format.</p>
 <p>Be sure to consider guidance on <app-generated-link linkHREF="http://interactions.acm.org/archive/view/july-august-2017/making-your-presentation-accessible">Making Your Presentation Accessible</app-generated-link>.</p>
-<h4 id="final-report">Final Report</h4>
+<h2 id="final-report">Final Report</h2>
 <p>Prepare a final report that is 4 to 10 pages in length, excluding references.</p>
 <p>Your final report should be presented in the same general structure as the papers you read this quarter:</p>
 <ul>
@@ -170,21 +176,21 @@ Be appropriately thorough and precise in your presentation, but do not needlessl
 <p>Format your report according to the current CHI format:</p>
 <p><a href="https://chi2020.acm.org/authors/chi-proceedings-format/">https://chi2020.acm.org/authors/chi-proceedings-format/</a></p>
 <p>Additional guidance regarding effective paper writing can be found in:</p>
-<div class="paper" markdown="block">
-Jacob O. Wobbrock.
-<app-generated-link linkHREF="`page.paper_url.wobbrock2015`">Catchy Titles are Good: But Avoid Being Cute</app-generated-link>.
-Writing Advice, White Paper, 2015.
-</div>
-<h5 id="submission-3">Submission</h5>
-<p>Due: <code>page.due.finalreport</code>.</p>
-<p><code>&lt; page.canvas.final_rep &gt;</code></p>
-<p>Submit your final report document in PDF format.</p>
+
+  <p><app-reading [reading]="site.readingWobbrockPaperWriting"></app-reading></p>
+
+<h3 id="final-report-submission">Final Report Submission</h3>
+<p><app-assignment-due-text dueText="{{ site.calendar.dueProjectReport }}"></app-assignment-due-text></p>
+<p>Submit your final report document in PDF format:</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitProjectReport }}"></app-assignment-submission-link></p>
 </ng-template>
 
 <ng-template #readings>
+<!--
 <div class="alert alert-danger" markdown="1">
 This page is still being migrated and developed. All content remains subject to change.
 </div>
+-->
 <h2 id="readings-and-reading-reports">Readings and Reading Reports</h2>
 <p>Assigned readings will focus on research topics, generally consisting of:</p>
 <ul>
@@ -241,7 +247,7 @@ Although we want everybody to be comfortable with open discussion,
 and we do not expect posts to be overly formal,
 this is another reason to be thoughtful in how you approach paper discussion.</p>
 <p>Discussions will be coordinated using Canvas:</p>
-<p><code>if page.canvas.discussion != nil &lt; page.canvas.discussion &gt; else Link to be added endif</code></p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkDiscussion }}"></app-assignment-submission-link></p>
 <p>We will create a post for each day and a discussion thread for each paper.
 If you have a thought or question that relates to multiple papers, post it wherever seems more appropriate.</p>
 <p>Reading reports are due at 11:59pm the night before each class meeting.
@@ -266,21 +272,26 @@ Please consider this assignment in the context of the material covered in lectur
 <p>In addition to the lecture material and the contents of this assignment,
 you might benefit from working through all or part of
 Jacob Wobbrock's independent study in Practical Statistics for Human-Computer Interaction.</p>
-<p><a href="http://depts.washington.edu/aimgroup/proj/ps4hci/">http://depts.washington.edu/aimgroup/proj/ps4hci/</a></p>
+<p><a href="http://depts.washington.edu/acelab/proj/ps4hci/index.html">http://depts.washington.edu/acelab/proj/ps4hci/index.html</a></p>
 <h3 id="download">Download</h3>
 <p>The assignment is available for download:</p>
-<p><code>&lt; site.url site.baseurl /assignments/statisticslab.zip&gt;</code></p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkStatisticsLab }}"></app-assignment-submission-link></p>
 <h3 id="submission">Submission</h3>
-<p><code>Due: page.due.stats .</code></p>
-<p>Submit a ZIP archive including your document in PDF format and any additional files:</p>
-<p><code>if page.canvas.stats_submit != nil &lt; page.canvas.stats_submit &gt; else Link to be added endif</code></p>
+<p><app-assignment-due-text dueText="{{ site.calendar.dueStatisticsLab }}"></app-assignment-due-text></p>
+<p><code>Decide on submission format, perhaps just an R Markdown file</code></p>
+<p><code>Submit a ZIP archive including your document in PDF format and any additional files:</code></p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitStatisticsLab }}"></app-assignment-submission-link></p>
+</ng-template>
+
+<ng-template #chi2020>
+<p>CHI 2020 virtual conference activities TBD.</p>
 </ng-template>
 
 <ng-template #contributions_in_hci>
 <p>Read the framing paper:</p>
 
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(0, 1)">
+    <li *ngFor="let currentReading of context.readingsNonstandard.slice(0, 1)">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -296,7 +307,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>Empirical Papers</p>
 
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(1, 4)">
+    <li *ngFor="let currentReading of context.readingsNonstandard.slice(1, 4)">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -308,7 +319,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>Artifact Papers</p>
 
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(4, 7)">
+    <li *ngFor="let currentReading of context.readingsNonstandard.slice(4, 7)">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -320,7 +331,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>Methodological Papers</p>
 
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(7, 10)">
+    <li *ngFor="let currentReading of context.readingsNonstandard.slice(7, 10)">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -332,7 +343,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>Theoretical Papers</p>
 
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(10, 13)">
+    <li *ngFor="let currentReading of context.readingsNonstandard.slice(10, 13)">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -344,7 +355,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>Benchmark/Dataset Papers</p>
 
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(13, 16)">
+    <li *ngFor="let currentReading of context.readingsNonstandard.slice(13, 16)">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -356,7 +367,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>Survey Papers</p>
 
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(16, 19)">
+    <li *ngFor="let currentReading of context.readingsNonstandard.slice(16, 19)">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -368,7 +379,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>Opinion Papers</p>
 
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(19, 22)">
+    <li *ngFor="let currentReading of context.readingsNonstandard.slice(19, 22)">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -381,8 +392,48 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>No reading report is assigned.</p>
 </ng-template>
 
+<ng-template #due_exam>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/exam">Exam</app-generated-link>
+</div>
+</ng-template>
+
+<ng-template #due_project_final_report>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/project#final-report">Project Final Report</app-generated-link>
+</div>
+</ng-template>
+
+<ng-template #due_statisticslab>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/statisticslab">Statistics Lab</app-generated-link>
+</div>
+</ng-template>
+
 <ng-template #no_reading>
 <p>No reading is assigned.</p>
+</ng-template>
+
+<ng-template #project_milestone>
+<div class="alert alert-danger">
+Class May Be Extended to Accommodate Presentations
+</div>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/project/#milestone-reports">Project Milestone</app-generated-link>
+</div>
+</ng-template>
+
+<ng-template #project_proposal>
+<div class="alert alert-danger">
+Class May Be Extended to Accommodate Presentations
+</div>
+<div class="alert alert-primary">
+Due: <app-generated-link linkHREF="/assignments/project/#proposal">Project Proposal</app-generated-link>
+</div>
+</ng-template>
+
+<ng-template #readings_tbd>
+<p>Readings TBD.</p>
 </ng-template>
 
 <ng-template #visions_of_hci>
@@ -390,7 +441,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 This is not an exhaustive set of such papers, just a set chosen to be interesting and appropriate.</p>
 
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard">
+    <li *ngFor="let currentReading of context.readingsNonstandard">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -402,7 +453,7 @@ This is not an exhaustive set of such papers, just a set chosen to be interestin
 <ul>
 <li>
 <p>Organize into groups of 2 to briefly present one of the above vision papers. Sign up for a paper here:</p>
-<p><code>&lt;https://docs.google.com/document/d/1-QzEOq3zPusRUW6S31_QAeSpGD8rt13UUYJrVwDKY4Q/edit?usp=sharing&gt;</code></p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkVisionsOrganization }}"></app-assignment-submission-link></p>
 <p>It is critical to remember most people will not have read the paper you are presenting.
 It is therefore your responsibility to explain the vision.
 One useful way of breaking down and explaining the vision might be to discuss these four points:</p>
@@ -412,8 +463,8 @@ One useful way of breaking down and explaining the vision might be to discuss th
 <li>How has this vision played out since this publication?</li>
 <li>How might this vision continue to play out in the future?</li>
 </ul>
-<p>Submit your presentation as 3 to 4 in PDF, PPT, or PPTX format:</p>
-<p><code>&lt;https://canvas.uw.edu/courses/1249568/assignments/4380316&gt;</code></p>
+<p>Submit your presentation as 3 to 4 slides in PDF, PPT, or PPTX format:</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitVisions }}"></app-assignment-submission-link></p>
 <p>Be sure to consider guidance on <app-generated-link linkHREF="http://interactions.acm.org/archive/view/july-august-2017/making-your-presentation-accessible">Making Your Presentation Accessible</app-generated-link>.</p>
 </li>
 <li>
@@ -445,11 +496,32 @@ Because some of these papers are quite long, you can and should skim according t
 </ng-container>
 
 <!-- Content for readings -->
+<ng-container *ngIf="contentName=='chi2020'">
+  <ng-container *ngTemplateOutlet="chi2020"></ng-container>
+</ng-container>
 <ng-container *ngIf="contentName=='contributions_in_hci'">
   <ng-container *ngTemplateOutlet="contributions_in_hci"></ng-container>
 </ng-container>
+<ng-container *ngIf="contentName=='due_exam'">
+  <ng-container *ngTemplateOutlet="due_exam"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='due_project_final_report'">
+  <ng-container *ngTemplateOutlet="due_project_final_report"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='due_statistics_lab'">
+  <ng-container *ngTemplateOutlet="due_statistics_lab"></ng-container>
+</ng-container>
 <ng-container *ngIf="contentName=='no_reading'">
   <ng-container *ngTemplateOutlet="no_reading"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='project_milestone'">
+  <ng-container *ngTemplateOutlet="project_milestone"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='project_proposal'">
+  <ng-container *ngTemplateOutlet="project_proposal"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='readings_tbd'">
+  <ng-container *ngTemplateOutlet="readings_tbd"></ng-container>
 </ng-container>
 <ng-container *ngIf="contentName=='visions_of_hci'">
   <ng-container *ngTemplateOutlet="visions_of_hci"></ng-container>

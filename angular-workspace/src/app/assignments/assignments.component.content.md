@@ -19,15 +19,12 @@
       </ng-container>
     </div>
     <div class="col-md-3 d-none d-md-block">        
-<p>[Overview](/assignments/)</p>
-
-<p>[Readings and<br>Reading Reports](/assignments/readings)</p>
-
-<p>[Project](/assignments/project)</p>
-
-<p>[Statistics Lab](/assignments/statisticslab)</p>
-
-<p>[Exam](/assignments/exam)</p>
+      <p>[Overview](/assignments/)</p>
+      <p class="d-xl-none">[Readings and<br>Reading Reports](/assignments/readings)</p>
+      <p class="d-none d-xl-block">[Readings and Reading Reports](/assignments/readings)</p>
+      <p>[Project](/assignments/project)</p>
+      <p>[Statistics Lab](/assignments/statisticslab)</p>
+      <p>[Exam](/assignments/exam)</p>
     </div>
   </div>
 </html>  

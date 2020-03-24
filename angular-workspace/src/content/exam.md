@@ -1,6 +1,8 @@
+<!--
 <div class="alert alert-danger" markdown="1">
 This page is still being migrated and developed. All content remains subject to change.
 </div>
+-->
 
 ## Exam
 
@@ -13,6 +15,8 @@ You may consult the course staff with any questions, but this is strictly an ind
 
 ### Submission
 
-`Due: page.due.exam .`
+<app-assignment-due-text dueText="{{ site.calendar.dueExam }}"></app-assignment-due-text>
 
-` if page.canvas.exam_submit != nil < page.canvas.exam_submit > else Link to be added endif`
+Submit your exam in PDF format:
+
+<app-assignment-submission-link linkSubmission="{{ site.linkSubmitExam }}"></app-assignment-submission-link>

@@ -2,7 +2,7 @@ Read the framing paper:
 
 <html>
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(0, 1)">
+    <li *ngFor="let currentReading of context.readingsNonstandard.slice(0, 1)">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -20,7 +20,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 
   <html>
     <ul>
-      <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(1, 4)">
+      <li *ngFor="let currentReading of context.readingsNonstandard.slice(1, 4)">
         <p>
           <app-reading [reading]="currentReading"></app-reading>
         </p>
@@ -32,7 +32,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 
   <html>
     <ul>
-      <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(4, 7)">
+      <li *ngFor="let currentReading of context.readingsNonstandard.slice(4, 7)">
         <p>
           <app-reading [reading]="currentReading"></app-reading>
         </p>
@@ -44,7 +44,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 
   <html>
     <ul>
-      <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(7, 10)">
+      <li *ngFor="let currentReading of context.readingsNonstandard.slice(7, 10)">
         <p>
           <app-reading [reading]="currentReading"></app-reading>
         </p>
@@ -56,7 +56,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 
   <html>
     <ul>
-      <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(10, 13)">
+      <li *ngFor="let currentReading of context.readingsNonstandard.slice(10, 13)">
         <p>
           <app-reading [reading]="currentReading"></app-reading>
         </p>
@@ -68,7 +68,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 
   <html>
     <ul>
-      <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(13, 16)">
+      <li *ngFor="let currentReading of context.readingsNonstandard.slice(13, 16)">
         <p>
           <app-reading [reading]="currentReading"></app-reading>
         </p>
@@ -80,7 +80,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 
   <html>
     <ul>
-      <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(16, 19)">
+      <li *ngFor="let currentReading of context.readingsNonstandard.slice(16, 19)">
         <p>
           <app-reading [reading]="currentReading"></app-reading>
         </p>
@@ -92,7 +92,7 @@ We include these to provide concrete examples of the contributions, but our in-c
 
   <html>
     <ul>
-      <li *ngFor="let currentReading of context.lecture.readingsNonstandard.slice(19, 22)">
+      <li *ngFor="let currentReading of context.readingsNonstandard.slice(19, 22)">
         <p>
           <app-reading [reading]="currentReading"></app-reading>
         </p>

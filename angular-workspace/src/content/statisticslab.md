@@ -19,18 +19,20 @@ In addition to the lecture material and the contents of this assignment,
 you might benefit from working through all or part of
 Jacob Wobbrock's independent study in Practical Statistics for Human-Computer Interaction.
 
-<http://depts.washington.edu/aimgroup/proj/ps4hci/>
+<http://depts.washington.edu/acelab/proj/ps4hci/index.html>
 
 ### Download
 
 The assignment is available for download:
 
-`< site.url site.baseurl /assignments/statisticslab.zip>`
+<app-assignment-submission-link linkSubmission="{{ site.linkStatisticsLab }}"></app-assignment-submission-link>
 
 ### Submission
 
-`Due: page.due.stats .`
+<app-assignment-due-text dueText="{{ site.calendar.dueStatisticsLab }}"></app-assignment-due-text>
 
-Submit a ZIP archive including your document in PDF format and any additional files:
+`Decide on submission format, perhaps just an R Markdown file`
 
-`if page.canvas.stats_submit != nil < page.canvas.stats_submit > else Link to be added endif`
+`Submit a ZIP archive including your document in PDF format and any additional files:`
+
+<app-assignment-submission-link linkSubmission="{{ site.linkSubmitStatisticsLab }}"></app-assignment-submission-link>

@@ -2,7 +2,7 @@ import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { Router } from "@angular/router";
 
-import { page as PageData } from "./home.component.pagedata";
+import { site as SiteData } from '../../data/sitedata';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +10,7 @@ import { page as PageData } from "./home.component.pagedata";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements AfterViewInit, OnInit {
-  page = PageData;
+  site = SiteData;
 
   constructor(
         @Inject(DOCUMENT) private document: Document,

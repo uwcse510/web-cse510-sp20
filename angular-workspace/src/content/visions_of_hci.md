@@ -3,7 +3,7 @@ This is not an exhaustive set of such papers, just a set chosen to be interestin
 
 <html>
   <ul>
-    <li *ngFor="let currentReading of context.lecture.readingsNonstandard">
+    <li *ngFor="let currentReading of context.readingsNonstandard">
       <p>
         <app-reading [reading]="currentReading"></app-reading>
       </p>
@@ -17,7 +17,7 @@ Each student has two responsibilities:
 
 - Organize into groups of 2 to briefly present one of the above vision papers. Sign up for a paper here:
 
-  `<https://docs.google.com/document/d/1-QzEOq3zPusRUW6S31_QAeSpGD8rt13UUYJrVwDKY4Q/edit?usp=sharing>`
+  <app-assignment-submission-link linkSubmission="{{ site.linkVisionsOrganization }}"></app-assignment-submission-link>
 
   It is critical to remember most people will not have read the paper you are presenting.
   It is therefore your responsibility to explain the vision. 
@@ -28,9 +28,9 @@ Each student has two responsibilities:
   - How has this vision played out since this publication?
   - How might this vision continue to play out in the future?
 
-  Submit your presentation as 3 to 4 in PDF, PPT, or PPTX format:
+  Submit your presentation as 3 to 4 slides in PDF, PPT, or PPTX format:
 
-  `<https://canvas.uw.edu/courses/1249568/assignments/4380316>`
+  <app-assignment-submission-link linkSubmission="{{ site.linkSubmitVisions }}"></app-assignment-submission-link>
 
   Be sure to consider guidance on [Making Your Presentation Accessible](http://interactions.acm.org/archive/view/july-august-2017/making-your-presentation-accessible).
 
