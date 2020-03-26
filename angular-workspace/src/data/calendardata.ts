@@ -1,6 +1,11 @@
 import * as moment from 'moment';
 import { Moment } from 'moment';
 
+export interface Guest {
+  name: string;
+  link: string;
+}
+
 export interface Reading {
   authorText: string;
   title: string;
@@ -17,6 +22,7 @@ interface Date {
   date: Moment;
 
   name: string;
+  guest?: Guest;
 
   contentNonstandard?: string;
 
@@ -368,8 +374,33 @@ class CalendarData {
     {
       date: moment('2020-05-05', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
-      contentNonstandard: 'readings_tbd',
+      name: 'Research Topic: Designing with Children',
+      guest: {
+        name: 'Jason Yip',
+        link: 'http://bigyipper.com/',
+      },
+      readingsStandard: {
+        framing: {
+          authorText: 'Allison Druin',
+          title: 'The Role of Children in the Design of New Technology',
+          publicationText: 'Behaviour and Information Technology, 2002',
+          link: '' // TODO
+        },
+        additional: [
+          {
+            authorText: 'Jason C. Yip, Kiley Sobel, Caroline Pitt, Kung Jin Lee, Sijin Chen, Kari Nasu, Laura R. Pina',
+            title: 'Examining Adult-Child Interactions in Intergenerational Participatory Design',
+            publicationText: 'CHI 2017',
+            link: '' // TODO
+          },
+          {
+            authorText: 'Julia Woodward, Zari McFadden, Nicole Shiver, Amir Ben-hayon, Jason C. Yip, Lisa Anthony',
+            title: 'Using Co-Design to Examine How Children Conceptualize Intelligent Interfaces',
+            publicationText: 'CHI 2018',
+            link: '' // TODO
+          }
+        ]
+      }
     },
     {
       date: moment('2020-05-07', 'YYYY-MM-DD'),

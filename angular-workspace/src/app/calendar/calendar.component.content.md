@@ -11,6 +11,11 @@ This page is still being migrated and developed. All content remains subject to 
         </div>
         <div class="col-md-10">
           <h2 id="{{ currentDate.name.split(' ').join('-').toLowerCase() }}">{{ currentDate.name }}</h2>
+          <ng-container *ngIf="currentDate.guest">
+            <div class="alert alert-info">
+              Guest: <app-generated-link linkHREF="{{ currentDate.guest.link }}">{{ currentDate.guest.name }}</app-generated-link>
+            </div>
+          </ng-container>
           <ng-container *ngIf="currentDate.readingsStandard">
             <!--
               - Standard Reading Format

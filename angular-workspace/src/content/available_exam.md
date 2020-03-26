@@ -1,3 +1,3 @@
-<div class="alert alert-primary">
+<div class="alert alert-info">
 Available: [Exam](/assignments/exam)
 </div>
