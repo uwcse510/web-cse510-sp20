@@ -33,8 +33,11 @@ interface Date {
 }
 
 class CalendarData {
-  availableExam = 'Before 11:59pm ' + moment('2020-06-05', 'YYYY-MM-DD').format('dddd, MMMM D');
+  availableExam = 'by 11:59pm ' + moment('2020-06-05', 'YYYY-MM-DD').format('dddd, MMMM D');
   dueExam = 'Uploaded by 11:59pm ' + moment('2020-06-08', 'YYYY-MM-DD').format('dddd, MMMM D');
+
+  availableStatisticsLab = 'by 11:59pm ' + moment('2020-05-12', 'YYYY-MM-DD').format('dddd, MMMM D');
+  dueStatisticsLab = 'Uploaded by 11:59pm ' + moment('2020-05-31', 'YYYY-MM-DD').format('dddd, MMMM D');
 
   dueProjectProposal = 'Uploaded by 11:59pm ' + moment('2020-04-15', 'YYYY-MM-DD').format('dddd, MMMM D') +
                        ' for in-class presentations ' + moment('2020-04-16', 'YYYY-MM-DD').format('dddd, MMMM D');
@@ -43,8 +46,6 @@ class CalendarData {
   dueProjectMilestone2 = 'Uploaded by 11:59pm ' + moment('2020-05-27', 'YYYY-MM-DD').format('dddd, MMMM D') +
                          ' for in-class presentations ' + moment('2020-05-28', 'YYYY-MM-DD').format('dddd, MMMM D');
   dueProjectReport = 'Uploaded by 11:59pm ' + moment('2020-06-11', 'YYYY-MM-DD').format('dddd, MMMM D');
-
-  dueStatisticsLab = null;
 
   dates: Date[] = [
     // Week 1
@@ -384,20 +385,20 @@ class CalendarData {
           authorText: 'Allison Druin',
           title: 'The Role of Children in the Design of New Technology',
           publicationText: 'Behaviour and Information Technology, 2002',
-          link: '' // TODO
+          link: 'https://canvas.uw.edu/files/63359372/download?download_frd=1'
         },
         additional: [
           {
             authorText: 'Jason C. Yip, Kiley Sobel, Caroline Pitt, Kung Jin Lee, Sijin Chen, Kari Nasu, Laura R. Pina',
             title: 'Examining Adult-Child Interactions in Intergenerational Participatory Design',
             publicationText: 'CHI 2017',
-            link: '' // TODO
+            link: 'https://canvas.uw.edu/files/63359373/download?download_frd=1'
           },
           {
             authorText: 'Julia Woodward, Zari McFadden, Nicole Shiver, Amir Ben-hayon, Jason C. Yip, Lisa Anthony',
             title: 'Using Co-Design to Examine How Children Conceptualize Intelligent Interfaces',
             publicationText: 'CHI 2018',
-            link: '' // TODO
+            link: 'https://canvas.uw.edu/files/63359371/download?download_frd=1'
           }
         ]
       }
@@ -412,8 +413,8 @@ class CalendarData {
     {
       date: moment('2020-05-12', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
-      contentNonstandard: 'readings_tbd',
+      name: 'Experimental Design and Analysis',
+      contentNonstandard: 'experimental_design_and_analysis',
     },
     {
       date: moment('2020-05-14', 'YYYY-MM-DD'),
@@ -438,7 +439,11 @@ class CalendarData {
     {
       date: moment('2020-05-26', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
+      name: 'Research Topic: Interaction and Search',
+      guest: {
+        name: 'Adam Fourney',
+        link: 'https://www.adamfourney.com/',
+      },
       contentNonstandard: 'readings_tbd',
     },
     {
@@ -447,18 +452,75 @@ class CalendarData {
       name: 'Project Milestone Presentations',
       contentNonstandard: 'project_milestone',
     },
+    // Statistics Lab
+    {
+      date: moment('2020-05-31', 'YYYY-MM-DD'),
+
+      name: 'Statistics Lab Due',
+      contentNonstandard: 'due_statistics_lab',
+    },
     // Week 10
     {
       date: moment('2020-06-02', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
-      contentNonstandard: 'readings_tbd',
+      name: 'Research Topic: Social Computing and CSCW',
+      guest: {
+        name: 'Amy Zhang',
+        link: 'https://homes.cs.washington.edu/~axz/',
+      },
+      readingsStandard: {
+        framing: {
+          authorText: 'Mark S. Ackerman',
+          title: 'The Intellectual Challenge of CSCW: The Gap Between Social Requirements and Technical Feasibility',
+          publicationText: 'Human-Computer Interaction, 2009',
+          link: 'https://canvas.uw.edu/files/63385683/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'Kaitlin Mahar, Amy X. Zhang, David Karger',
+            title: 'Squadbox: A Tool to Combat Online Harassment Using Friendsourced Moderation',
+            publicationText: 'CHI 2018',
+            link: 'https://canvas.uw.edu/files/63385812/download?download_frd=1'
+          },
+          {
+            authorText: 'Maurice Jakesch, Megan French, Xiao Ma, Jeffrey T. Hancock, Mor Naaman',
+            title: 'AI-Mediated Communication: How the Perception that Profile Text was Written by AI Affects Trustworthiness',
+            publicationText: 'CHI 2019',
+            link: 'https://canvas.uw.edu/files/63385702/download?download_frd=1'
+          },
+        ]
+      }
     },
     {
       date: moment('2020-06-04', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
-      contentNonstandard: 'readings_tbd',
+      name: 'Research Topic: Research through Design',
+      guest: {
+        name: 'Audrey Desjardins',
+        link: 'http://www.audreydesjardins.com/',
+      },
+      readingsStandard: {
+        framing: {
+          authorText: 'William Gaver',
+          title: 'What Should We Expect from Research Through Design?',
+          publicationText: 'CHI 2012',
+          link: 'https://canvas.uw.edu/files/63386154/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'William Odom, Ron Wakkary, Youn-kyung Lim, Audrey Desjardins, Bart Hengeveld, Richard Banks',
+            title: ' From Research Prototype to Research Product',
+            publicationText: 'CHI 2016',
+            link: 'https://canvas.uw.edu/files/63386153/download?download_frd=1'
+          },
+          {
+            authorText: 'Jayne Wallace, Jon Rogers, Michael Shorter, Pete Thomas, Martin Skelly, Richard Cook',
+            title: ' The SelfReflector: Design, IoT and the High Street',
+            publicationText: 'CHI 2018',
+            link: 'https://canvas.uw.edu/files/63386156/download?download_frd=1'
+          },
+        ]
+      }
     },
     // Finals Week
     {
@@ -483,3 +545,31 @@ class CalendarData {
 }
 
 export const calendar = new CalendarData();
+
+// name: 'Research Topic: Accessibility',
+// guest: {
+//   name: 'Meredith Ringle Morris',
+//   link: 'https://www.microsoft.com/en-us/research/people/merrie/',
+// },
+// readingsStandard: {
+//   framing: {
+//     authorText: 'Jennifer Mankoff, Gillian R. Hayes, Devva Kasnitz',
+//     title: 'Disability Studies as a Source of Critical Inquiry for the Field of Assistive Technology',
+//     publicationText: 'ASSETS 2010',
+//     link: 'https://canvas.uw.edu/files/63388453/download?download_frd=1'
+//   },
+//   additional: [
+//     {
+//       authorText: 'Shaun Kane, Meredith Ringel Morris, Ann Paradiso, Jon Campbell',
+//       title: '"At times avuncular and cantankerous, with the reflexes of a mongoose": Understanding Self-Expression through Augmentative and Alternative Communication Devices',
+//       publicationText: 'CSCW 2017',
+//       link: 'https://canvas.uw.edu/files/63388437/download?download_frd=1'
+//     },
+//     {
+//       authorText: 'Kyle Rector, Keith Salmon, Daniel Thornton, Neel Joshi, Meredith Ringel Morris',
+//       title: 'Eyes-Free Art: Exploring Proxemic Audio Interfaces For Blind and Low Vision Art Engagement',
+//       publicationText: 'UbiComp 2017',
+//       link: 'https://canvas.uw.edu/files/63388470/download?download_frd=1'
+//     },
+//   ]
+// }

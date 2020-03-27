@@ -76,7 +76,7 @@ export const RENDERING_DATA: MarkdownRenderingData[] = [
       ),
       new MarkdownRenderingPair(
         'src/content/due_statistics_lab.md',
-        'due_statisticslab'
+        'due_statistics_lab'
       ),
       new MarkdownRenderingPair(
         'src/content/project_milestone.md',
@@ -96,6 +96,10 @@ export const RENDERING_DATA: MarkdownRenderingData[] = [
       new MarkdownRenderingPair(
         'src/content/contributions_in_hci.md',
         'contributions_in_hci'
+      ),
+      new MarkdownRenderingPair(
+        'src/content/experimental_design_and_analysis.md',
+        'experimental_design_and_analysis'
       ),
       new MarkdownRenderingPair(
         'src/content/no_reading.md',

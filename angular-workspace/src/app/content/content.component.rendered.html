@@ -258,9 +258,11 @@ Submitting the day of class, just before class, or in class is therefore unaccep
 </ng-template>
 
 <ng-template #statisticslab>
+<!--
 <div class="alert alert-danger" markdown="1">
 This page is still being migrated and developed. All content remains subject to change.
 </div>
+-->
 <h2 id="statistics-lab">Statistics Lab</h2>
 <p>To aid in developing necessary skills, you will complete a small statistics lab using <app-generated-link linkHREF="//www.r-project.org/">R</app-generated-link>.
 The lab will walk you through analyzing an example data set,
@@ -275,13 +277,19 @@ Please consider this assignment in the context of the material covered in lectur
 you might benefit from working through all or part of
 Jacob Wobbrock's independent study in Practical Statistics for Human-Computer Interaction.</p>
 <p><a href="http://depts.washington.edu/acelab/proj/ps4hci/index.html">http://depts.washington.edu/acelab/proj/ps4hci/index.html</a></p>
-<h3 id="download">Download</h3>
-<p>The assignment is available for download:</p>
-<p><app-assignment-submission-link linkSubmission="{{ site.linkStatisticsLab }}"></app-assignment-submission-link></p>
+<h3 id="statistics-lab-availability">Statistics Lab Availability</h3>
+<p>The statistics lab will be made available for download {{ site.calendar.availableStatisticsLab }}.</p>
+<!--
+The statistics lab is available for download:
+
+<app-assignment-submission-link linkSubmission="{{ site.linkStatisticsLab }}"></app-assignment-submission-link>
+-->
 <h3 id="submission">Submission</h3>
 <p><app-assignment-due-text dueText="{{ site.calendar.dueStatisticsLab }}"></app-assignment-due-text></p>
-<p><code>Decide on submission format, perhaps just an R Markdown file</code></p>
-<p><code>Submit a ZIP archive including your document in PDF format and any additional files:</code></p>
+<!--
+`Decide on submission format, perhaps just an R Markdown file`
+`Submit a ZIP archive including your document in PDF format and any additional files:`
+-->
 <p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitStatisticsLab }}"></app-assignment-submission-link></p>
 </ng-template>
 
@@ -303,7 +311,7 @@ Due: <app-generated-link linkHREF="/assignments/project#final-report">Project Fi
 </div>
 </ng-template>
 
-<ng-template #due_statisticslab>
+<ng-template #due_statistics_lab>
 <div class="alert alert-info">
 Due: <app-generated-link linkHREF="/assignments/statisticslab">Statistics Lab</app-generated-link>
 </div>
@@ -436,6 +444,14 @@ We include these to provide concrete examples of the contributions, but our in-c
 <p>No reading report is assigned.</p>
 </ng-template>
 
+<ng-template #experimental_design_and_analysis>
+<div class="alert alert-info">
+Available: <app-generated-link linkHREF="/assignments/statisticslab">Statistics Lab</app-generated-link>
+</div>
+<h3 id="non-standard-reading-format">Non-Standard Reading Format</h3>
+<p><app-content contentName="no_reading"></app-content></p>
+</ng-template>
+
 <ng-template #no_reading>
 <p>No reading is assigned.</p>
 </ng-template>
@@ -521,6 +537,9 @@ Because some of these papers are quite long, you can and should skim according t
 </ng-container>
 <ng-container *ngIf="contentName=='due_statistics_lab'">
   <ng-container *ngTemplateOutlet="due_statistics_lab"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='experimental_design_and_analysis'">
+  <ng-container *ngTemplateOutlet="experimental_design_and_analysis"></ng-container>
 </ng-container>
 <ng-container *ngIf="contentName=='no_reading'">
   <ng-container *ngTemplateOutlet="no_reading"></ng-container>

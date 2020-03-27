@@ -1,6 +1,8 @@
+<!--
 <div class="alert alert-danger" markdown="1">
 This page is still being migrated and developed. All content remains subject to change.
 </div>
+-->
 
 ## Statistics Lab
 
@@ -21,18 +23,23 @@ Jacob Wobbrock's independent study in Practical Statistics for Human-Computer I
 
 <http://depts.washington.edu/acelab/proj/ps4hci/index.html>
 
-### Download
+### Statistics Lab Availability
 
-The assignment is available for download:
+The statistics lab will be made available for download {{ site.calendar.availableStatisticsLab }}.
+
+<!--
+The statistics lab is available for download:
 
 <app-assignment-submission-link linkSubmission="{{ site.linkStatisticsLab }}"></app-assignment-submission-link>
+-->
 
 ### Submission
 
 <app-assignment-due-text dueText="{{ site.calendar.dueStatisticsLab }}"></app-assignment-due-text>
 
+<!--
 `Decide on submission format, perhaps just an R Markdown file`
-
 `Submit a ZIP archive including your document in PDF format and any additional files:`
+-->
 
 <app-assignment-submission-link linkSubmission="{{ site.linkSubmitStatisticsLab }}"></app-assignment-submission-link>
