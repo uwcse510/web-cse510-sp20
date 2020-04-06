@@ -1,0 +1,46 @@
+<!--
+  -- ng-template can only appear once, so we capture it and use an ngTemplateOutput
+  -- https://stackoverflow.com/questions/44699469/how-to-use-multiple-ng-content-in-the-same-component-in-angular-2
+  -->
+
+<ng-template #content><ng-content></ng-content></ng-template>
+
+<!-- External links -->
+<ng-container *ngIf="isExternal()">
+  <a [href]="linkHREF" target="_blank">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </a>
+</ng-container>
+<!-- Internal links -->
+<ng-container *ngIf="!isExternal()">
+  <ng-container *ngIf="isFile()">
+    <!-- Internal file -->
+    <a [routerLink]="linkHREF" target="_blank">
+      <ng-container *ngTemplateOutlet="content"></ng-container>
+    </a>
+  </ng-container>
+  <ng-container *ngIf="!isFile()">
+    <ng-container *ngIf="isAnchor()">
+      <!-- Internal anchor -->
+      <a [routerLink]="'./'" [fragment]="linkHREF.slice(1)">
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+      </a>
+    </ng-container>
+    <ng-container *ngIf="!isAnchor()">
+      <ng-container *ngIf="isPageWithAnchor()">
+        <!-- Internal page with anchor -->
+        <a [routerLink]="linkHREF.split('#')[0]" [fragment]="linkHREF.split('#')[1]">
+          <ng-container *ngTemplateOutlet="content"></ng-container>
+        </a>
+      </ng-container>
+      <ng-container *ngIf="!isPageWithAnchor()">
+        <!-- Internal page -->
+        <a [routerLink]="linkHREF">
+          <ng-container *ngTemplateOutlet="content"></ng-container>
+        </a>
+      </ng-container>
+    </ng-container>
+  </ng-container>
+</ng-container>
+
+

@@ -1,0 +1,11 @@
+# web-cse440-wi20
+
+{% if readme.travis_badge %}
+{{ readme.travis_badge }}
+{% endif %}
+
+The course website for CSE 440 in Winter 2020.
+
+{% include "base/readme/install.md" %}
+
+{% include "base/readme/invoke.md" %}

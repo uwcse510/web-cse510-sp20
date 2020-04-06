@@ -1,0 +1,43 @@
+<ng-template #content>
+<div class="row">
+    <div class="col-md-9">
+      <ng-container *ngIf="assignment==''">
+        <h2>Overview</h2>
+        <app-content contentName="assignments"></app-content>
+      </ng-container>
+      <ng-container *ngIf="assignment=='exam'">
+        <app-content contentName="exam"></app-content>
+      </ng-container>
+      <ng-container *ngIf="assignment=='project'">
+        <app-content contentName="project"></app-content>
+      </ng-container>
+      <ng-container *ngIf="assignment=='readings'">
+        <app-content contentName="readings"></app-content>
+      </ng-container>
+      <ng-container *ngIf="assignment=='statisticslab'">
+        <app-content contentName="statisticslab"></app-content>
+      </ng-container>
+    </div>
+    <div class="col-md-3 d-none d-md-block">        
+      <p><app-generated-link linkHREF="/assignments/">Overview</app-generated-link></p>
+      <p class="d-xl-none"><app-generated-link linkHREF="/assignments/readings">Readings and<br>Reading Reports</app-generated-link></p>
+      <p class="d-none d-xl-block"><app-generated-link linkHREF="/assignments/readings">Readings and Reading Reports</app-generated-link></p>
+      <p><app-generated-link linkHREF="/assignments/project">Project</app-generated-link></p>
+      <p><app-generated-link linkHREF="/assignments/statisticslab">Statistics Lab</app-generated-link></p>
+      <p><app-generated-link linkHREF="/assignments/exam">Exam</app-generated-link></p>
+    </div>
+  </div>
+</ng-template>
+
+<div class="container app-main">
+  <div class="row">
+    <div class="col">
+      <h1>Assignments</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <ng-container *ngTemplateOutlet="content"></ng-container>
+    </div>
+  </div>
+</div>

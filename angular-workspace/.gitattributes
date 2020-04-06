@@ -1,0 +1,4 @@
+# Prevent diffs of binary files in samples
+*.pdf -diff
+*.mp4 -diff
+

@@ -1,0 +1,54 @@
+<!-- Content for assignments -->
+<ng-container *ngIf="contentName=='assignments'">
+  <ng-container *ngTemplateOutlet="assignments"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='exam'">
+  <ng-container *ngTemplateOutlet="exam"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='project'">
+  <ng-container *ngTemplateOutlet="project"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='readings'">
+  <ng-container *ngTemplateOutlet="readings"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='statisticslab'">
+  <ng-container *ngTemplateOutlet="statisticslab"></ng-container>
+</ng-container>
+
+<!-- Content for readings -->
+<ng-container *ngIf="contentName=='available_exam'">
+  <ng-container *ngTemplateOutlet="available_exam"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='chi2020'">
+  <ng-container *ngTemplateOutlet="chi2020"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='contributions_in_hci'">
+  <ng-container *ngTemplateOutlet="contributions_in_hci"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='due_exam'">
+  <ng-container *ngTemplateOutlet="due_exam"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='due_project_final_report'">
+  <ng-container *ngTemplateOutlet="due_project_final_report"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='due_statistics_lab'">
+  <ng-container *ngTemplateOutlet="due_statistics_lab"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='experimental_design_and_analysis'">
+  <ng-container *ngTemplateOutlet="experimental_design_and_analysis"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='no_reading'">
+  <ng-container *ngTemplateOutlet="no_reading"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='project_milestone'">
+  <ng-container *ngTemplateOutlet="project_milestone"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='project_proposal'">
+  <ng-container *ngTemplateOutlet="project_proposal"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='readings_tbd'">
+  <ng-container *ngTemplateOutlet="readings_tbd"></ng-container>
+</ng-container>
+<ng-container *ngIf="contentName=='visions_of_hci'">
+  <ng-container *ngTemplateOutlet="visions_of_hci"></ng-container>
+</ng-container>
