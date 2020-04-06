@@ -39,6 +39,5 @@ Each student has two responsibilities:
 Because "As We May Think" was presented as part of the previous lecture, you may not present it. You may still choose to read it.
 
 No reading report is assigned. 
-Reading a second paper benefits in-class discussion.
-helping you see these visions and explore them appropriately. 
+Reading a second paper benefits in-class discussion, helping you see these visions and explore them appropriately. 
 Because some of these papers are quite long, you can and should skim according to your needs.

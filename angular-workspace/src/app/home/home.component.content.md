@@ -84,9 +84,10 @@ The overall course grade will be computed as follows:
 
 - 20%: Readings and Reading Reports
 - 45%: Group Project
+  - 5%: Proposal Document and Presentation
   - 5%: Milestone 1 Report and Presentation
   - 5%: Milestone 2 Report and Presentation
-  - 35%: Final Report
+  - 30%: Final Report
 - 10%: Statistics Lab
 - 15%: Exam
 - 10%: Participation

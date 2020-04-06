@@ -349,13 +349,38 @@ class CalendarData {
     {
       date: moment('2020-04-21', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
-      contentNonstandard: 'readings_tbd',
+      name: 'Research Topic: Design Tools',
+      readingsStandard: {
+        framing: {
+          authorText: 'Mark W. Newman, James Lin, Jason I. Hong, James A. Landay',
+          title: 'DENIM: An Informal Web Site Design Tool Inspired by Observations of Practice',
+          publicationText: 'HCI, 2003',
+          link: 'https://canvas.uw.edu/files/63552021/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'Steven P. Dow, Alana Glassco, Jonathan Kass, Melissa Schwarz, Daniel L. Schwartz, Scott R. Klemmer',
+            title: 'Parallel Prototyping Leads to Better Design Results, More Divergence, and Increased Self-Efficacy',
+            publicationText: 'TOCHI, 2010',
+            link: 'https://canvas.uw.edu/files/63552018/download?download_frd=1'
+          },
+          {
+            authorText: 'Stefanie Mueller, Sangha Im, Serafima Gurevich, Alexander Teibrich, Lisa Pfisterer, François Guimbretière, Patrick Baudisch',
+            title: 'WirePrint: 3D Printed Previews for Fast Prototyping',
+            publicationText: 'UIST 2014',
+            link: 'https://canvas.uw.edu/files/63562229/download?download_frd=1'
+          }
+        ]
+      }
     },
     {
       date: moment('2020-04-23', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
+      name: 'Research Topic: Augmented Reality',
+      guest: {
+        name: 'Andrés Monroy-Hernández',
+        link: 'http://www.andresmh.com/',
+      },
       contentNonstandard: 'readings_tbd',
     },
     // Week 5
@@ -419,21 +444,88 @@ class CalendarData {
     {
       date: moment('2020-05-14', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
-      contentNonstandard: 'readings_tbd',
+      name: 'Research Topic: Interface Toolkits',
+      readingsStandard: {
+        framing: {
+          authorText: 'Brad Myers, Scott E. Hudson, Randy Pausch',
+          title: 'Past, Present, and Future of User Interface Software Tools',
+          publicationText: 'TOCHI 2000',
+          link: 'https://canvas.uw.edu/files/63551706/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'Michael Bostock, Vadim Ogievetsky, Jeffrey Heer',
+            title: 'D3: Data-Driven Documents',
+            publicationText: 'InfoVis 2011',
+            link: 'https://canvas.uw.edu/files/63551708/download?download_frd=1'
+          },
+          {
+            authorText: 'Morgan Dixon, James Fogarty',
+            title: 'Prefab: Implementing Advanced Behaviors Using Pixel-Based Reverse Engineering of Interface Structure',
+            publicationText: 'CHI 2010',
+            link: 'https://canvas.uw.edu/files/63551703/download?download_frd=1'
+          }
+        ]
+      }
     },
     // Week 8
     {
       date: moment('2020-05-19', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
-      contentNonstandard: 'readings_tbd',
+      name: 'Research Topic: Accessibility',
+      guest: {
+        name: 'Meredith Ringle Morris',
+        link: 'https://www.microsoft.com/en-us/research/people/merrie/',
+      },
+      readingsStandard: {
+        framing: {
+          authorText: 'Jennifer Mankoff, Gillian R. Hayes, Devva Kasnitz',
+          title: 'Disability Studies as a Source of Critical Inquiry for the Field of Assistive Technology',
+          publicationText: 'ASSETS 2010',
+          link: 'https://canvas.uw.edu/files/63388453/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'Shaun Kane, Meredith Ringel Morris, Ann Paradiso, Jon Campbell',
+            title: '"At times avuncular and cantankerous, with the reflexes of a mongoose": Understanding Self-Expression through Augmentative and Alternative Communication Devices',
+            publicationText: 'CSCW 2017',
+            link: 'https://canvas.uw.edu/files/63388437/download?download_frd=1'
+          },
+          {
+            authorText: 'Kyle Rector, Keith Salmon, Daniel Thornton, Neel Joshi, Meredith Ringel Morris',
+            title: 'Eyes-Free Art: Exploring Proxemic Audio Interfaces For Blind and Low Vision Art Engagement',
+            publicationText: 'UbiComp 2017',
+            link: 'https://canvas.uw.edu/files/63388470/download?download_frd=1'
+          }
+        ]
+      }
     },
     {
       date: moment('2020-05-21', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: TBD',
-      contentNonstandard: 'readings_tbd',
+      name: 'Research Topic: Interactive Machine Learning',
+      readingsStandard: {
+        framing: {
+          authorText: 'Jerry Alan Fails, Dan R. Olsen',
+          title: 'Interactive Machine Learning',
+          publicationText: 'IUI 2003',
+          link: 'https://canvas.uw.edu/files/63551836/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'Hao Lü, James Fogarty, Yang Li',
+            title: 'Gesture Script: Recognizing Gestures and their Structure Using Rendering Scripts and Interactively Trained Parts',
+            publicationText: 'CHI 2014',
+            link: 'https://canvas.uw.edu/files/63551840/download?download_frd=1'
+          },
+          {
+            authorText: 'Saleema Amershi, Dan Weld, Mihaela Vorvoreanu, Adam Fourney, Besmira Nushi, Penny Collisson, Jina Suh, Shamsi Iqbal, Paul N. Bennett, Kori Inkpen, Jaime Teevan, Ruth Kikin-Gil, Eric Horvitz',
+            title: 'Guidelines for Human-AI Interaction',
+            publicationText: 'CHI 2019',
+            link: 'https://canvas.uw.edu/files/63551941/download?download_frd=1'
+          }
+        ]
+      }
     },
     // Week 9
     {

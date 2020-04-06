@@ -6,21 +6,21 @@ class SiteData {
   linkDiscussion = 'https://canvas.uw.edu/courses/1371984/discussion_topics';
 
   linkVisionsOrganization = 'https://docs.google.com/document/d/1-QzEOq3zPusRUW6S31_QAeSpGD8rt13UUYJrVwDKY4Q/edit?usp=sharing';
-  linkSubmitVisions = null;
+  linkSubmitVisions = 'https://canvas.uw.edu/courses/1371984/assignments/5389367';
 
-  linkProjectProposalIdeas = null;
-  linkProjectProposalSamples = null; // https://canvas.uw.edu/courses/1249568/files/folder/project_samples
-  linkProjectProposalEarlyFeedback = null; // https://calendar.google.com/calendar/selfsched?sstoken=UUhkV1oxenFvQmdqfGRlZmF1bHR8NTczYzFkZjQ3OTFiMmNiZTcwZmY4NzZmY2Q3OGNlYzg
+  linkProjectProposalIdeas = 'https://canvas.uw.edu/courses/1371984/discussion_topics/5340935';
+  linkProjectProposalSamples = 'https://canvas.uw.edu/courses/1371984/files/folder/project%20samples';
+  linkProjectProposalEarlyFeedback = 'https://calendar.google.com/calendar/selfsched?sstoken=UUw1Q2o3dVVUcXUyfGRlZmF1bHR8NWNhYzYxNjgxNDdhMGNhYWMzMGE4OTYyOWNhOWIyZDU';
 
   linkStatisticsLab = null;
-  linkSubmitStatisticsLab = null;
+  linkSubmitStatisticsLab = 'https://canvas.uw.edu/courses/1371984/assignments/5390983';
 
-  linkSubmitProjectProposal = null;
-  linkSubmitProjectMilestone1 = null;
-  linkSubmitProjectMilestone2 = null;
-  linkSubmitProjectReport = null;
+  linkSubmitProjectProposal = 'https://canvas.uw.edu/courses/1371984/assignments/5390906';
+  linkSubmitProjectMilestone1 = 'https://canvas.uw.edu/courses/1371984/assignments/5390939';
+  linkSubmitProjectMilestone2 = 'https://canvas.uw.edu/courses/1371984/assignments/5390992';
+  linkSubmitProjectReport = 'https://canvas.uw.edu/courses/1371984/assignments/5391093';
 
-  linkSubmitExam = null;
+  linkSubmitExam = 'https://canvas.uw.edu/courses/1371984/assignments/5391063';
 
   readingWobbrockPaperWriting: Reading = {
     authorText: 'Jacob O. Wobbrock',
