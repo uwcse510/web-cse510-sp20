@@ -1,3 +1,5 @@
+import * as moment from 'moment';
+
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { Router } from '@angular/router';
@@ -20,6 +22,11 @@ export class CalendarComponent implements AfterViewInit, OnInit {
   }
 
   ngOnInit() {
+    // Initialize which items are collapsed
+    for (const currentDate of this.site.calendar.dates) {
+      // Force in a collapsed property
+      (currentDate as any).collapsed = currentDate.date < moment().startOf('date');
+    }
   }
 
   ngAfterViewInit() {
