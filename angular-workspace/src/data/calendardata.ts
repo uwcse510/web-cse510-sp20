@@ -376,12 +376,33 @@ class CalendarData {
     {
       date: moment('2020-04-23', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: Augmented Reality',
+      name: 'Research Topic: Construction Kits',
       guest: {
         name: 'Andrés Monroy-Hernández',
         link: 'http://www.andresmh.com/',
       },
-      contentNonstandard: 'readings_tbd',
+      readingsStandard: {
+        framing: {
+          authorText: 'Mitchel Resnick, Brian Silverman',
+          title: 'Some Reflections on Designing Construction Kits for Kids',
+          publicationText: 'IDC 2005',
+          link: 'https://canvas.uw.edu/files/63876804/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'Sayamindu Dasgupta, Benjamin Mako Hill',
+            title: 'How “Wide Walls” Can Increase Engagement: Evidence From a Natural Experiment in Scratch',
+            publicationText: 'CHI 2018',
+            link: 'https://canvas.uw.edu/files/63876803/download?download_frd=1'
+          },
+          {
+            authorText: 'Anhong Guo, Ilter Canberk, Hannah Murphy, Andrés Monroy-Hernández, Rajan Vaish',
+            title: 'Blocks: Collaborative and Persistent Augmented Reality Experiences',
+            publicationText: 'IMWUT, 2019',
+            link: 'https://canvas.uw.edu/files/63876805/download?download_frd=1'
+          },
+        ]
+      }
     },
     // Week 5
     {
@@ -637,31 +658,3 @@ class CalendarData {
 }
 
 export const calendar = new CalendarData();
-
-// name: 'Research Topic: Accessibility',
-// guest: {
-//   name: 'Meredith Ringle Morris',
-//   link: 'https://www.microsoft.com/en-us/research/people/merrie/',
-// },
-// readingsStandard: {
-//   framing: {
-//     authorText: 'Jennifer Mankoff, Gillian R. Hayes, Devva Kasnitz',
-//     title: 'Disability Studies as a Source of Critical Inquiry for the Field of Assistive Technology',
-//     publicationText: 'ASSETS 2010',
-//     link: 'https://canvas.uw.edu/files/63388453/download?download_frd=1'
-//   },
-//   additional: [
-//     {
-//       authorText: 'Shaun Kane, Meredith Ringel Morris, Ann Paradiso, Jon Campbell',
-//       title: '"At times avuncular and cantankerous, with the reflexes of a mongoose": Understanding Self-Expression through Augmentative and Alternative Communication Devices',
-//       publicationText: 'CSCW 2017',
-//       link: 'https://canvas.uw.edu/files/63388437/download?download_frd=1'
-//     },
-//     {
-//       authorText: 'Kyle Rector, Keith Salmon, Daniel Thornton, Neel Joshi, Meredith Ringel Morris',
-//       title: 'Eyes-Free Art: Exploring Proxemic Audio Interfaces For Blind and Low Vision Art Engagement',
-//       publicationText: 'UbiComp 2017',
-//       link: 'https://canvas.uw.edu/files/63388470/download?download_frd=1'
-//     },
-//   ]
-// }
