@@ -557,7 +557,36 @@ class CalendarData {
         name: 'Adam Fourney',
         link: 'https://www.adamfourney.com/',
       },
-      contentNonstandard: 'readings_tbd',
+      readingsStandard: {
+        framing: {
+          authorText: 'G. W. Furnas, T. K. Landauer, L. M. Gomez, S. T. Dumais',
+          title: 'The Vocabulary Problem in Human-System Communication',
+          publicationText: 'CACM, 1987',
+          link: 'https://canvas.uw.edu/files/64126876/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'Adam Fourney, Richard Mann, Michael Terry',
+            title: 'Query-Feature Graphs: Bridging User Vocabulary and System Functionality',
+            publicationText: 'UIST 2011',
+            link: 'https://canvas.uw.edu/files/64126916/download?download_frd=1'
+          },
+          {
+            authorText: 'Eytan Adar, Mira Dontcheva, Gierad Laput',
+            title: 'CommandSpace: Modeling the Relationships Between Tasks, Descriptions and Features',
+            publicationText: 'UIST 2014',
+            link: 'https://canvas.uw.edu/files/64126918/download?download_frd=1'
+          }
+        ]
+      },
+      additionalResources: [
+        {
+          authorText: 'Don Norman',
+          title: 'The Next UI Breakthrough: Command Lines',
+          publicationText: 'Interactions, 2007',
+          link: 'https://canvas.uw.edu/files/64126966/download?download_frd=1'
+        }
+      ]
     },
     {
       date: moment('2020-05-28', 'YYYY-MM-DD'),
