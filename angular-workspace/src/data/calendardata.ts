@@ -41,6 +41,7 @@ class CalendarData {
 
   dueProjectProposal = 'Uploaded by 11:59pm ' + moment('2020-04-15', 'YYYY-MM-DD').format('dddd, MMMM D') +
                        ' for in-class presentations ' + moment('2020-04-16', 'YYYY-MM-DD').format('dddd, MMMM D');
+  dueProjectRelatedResearch = 'Uploaded by 11:59pm ' + moment('2020-05-01', 'YYYY-MM-DD').format('dddd, MMMM D');
   dueProjectMilestone1 = 'Uploaded by 11:59pm ' + moment('2020-05-6', 'YYYY-MM-DD').format('dddd, MMMM D') +
                          ' for in-class presentations ' + moment('2020-05-07', 'YYYY-MM-DD').format('dddd, MMMM D');
   dueProjectMilestone2 = 'Uploaded by 11:59pm ' + moment('2020-05-27', 'YYYY-MM-DD').format('dddd, MMMM D') +
@@ -408,13 +409,13 @@ class CalendarData {
     {
       date: moment('2020-04-28', 'YYYY-MM-DD'),
 
-      name: 'CHI 2020 Virtual Conference',
+      name: 'CHI 2020 Virtual Activities',
       contentNonstandard: 'chi2020',
     },
     {
       date: moment('2020-04-30', 'YYYY-MM-DD'),
 
-      name: 'CHI 2020 Virtual Conference',
+      name: 'CHI 2020 Virtual Activities',
       contentNonstandard: 'chi2020',
     },
     // Week 6

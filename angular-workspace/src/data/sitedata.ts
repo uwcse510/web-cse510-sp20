@@ -12,10 +12,11 @@ class SiteData {
   linkProjectProposalSamples = 'https://canvas.uw.edu/courses/1371984/files/folder/project%20samples';
   linkProjectProposalEarlyFeedback = 'https://calendar.google.com/calendar/selfsched?sstoken=UUw1Q2o3dVVUcXUyfGRlZmF1bHR8NWNhYzYxNjgxNDdhMGNhYWMzMGE4OTYyOWNhOWIyZDU';
 
-  linkStatisticsLab = null;
+  linkStatisticsLab = 'https://canvas.uw.edu/files/65010646/download?download_frd=1';
   linkSubmitStatisticsLab = 'https://canvas.uw.edu/courses/1371984/assignments/5390983';
 
   linkSubmitProjectProposal = 'https://canvas.uw.edu/courses/1371984/assignments/5390906';
+  linkSubmitProjectRelatedResearch = 'https://canvas.uw.edu/courses/1371984/assignments/5464345';
   linkSubmitProjectMilestone1 = 'https://canvas.uw.edu/courses/1371984/assignments/5390939';
   linkSubmitProjectMilestone2 = 'https://canvas.uw.edu/courses/1371984/assignments/5390992';
   linkSubmitProjectReport = 'https://canvas.uw.edu/courses/1371984/assignments/5391093';

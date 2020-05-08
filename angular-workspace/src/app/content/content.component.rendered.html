@@ -70,12 +70,13 @@ Working in groups is a necessary part of doing research, and it is also importan
 <p><app-assignment-submission-link linkSubmission="{{ site.linkProjectProposalIdeas }}"></app-assignment-submission-link></p>
 <p>You can also use that discussion to identify potential project partners and to post your own ideas.</p>
 <h2 id="project-deliverables">Project Deliverables</h2>
-<p>Project deliverables are defined in terms of a proposal, a pair of self-defined milestones, and a final report.</p>
+<p>Project deliverables are defined in terms of a proposal, a survey of recent related research, a pair of self-defined milestones, and a final report.</p>
 <ul>
-<li>Proposal:       <app-assignment-due-text dueText="{{ site.calendar.dueProjectProposal }}"></app-assignment-due-text></li>
-<li>Milestone 1:    <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone1 }}"></app-assignment-due-text></li>
-<li>Milestone 2:    <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone2 }}"></app-assignment-due-text></li>
-<li>Final Report:   <app-assignment-due-text dueText="{{ site.calendar.dueProjectReport }}"></app-assignment-due-text></li>
+<li>Proposal:         <app-assignment-due-text dueText="{{ site.calendar.dueProjectProposal }}"></app-assignment-due-text></li>
+<li>Related Research: <app-assignment-due-text dueText="{{ site.calendar.dueProjectRelatedResearch }}"></app-assignment-due-text></li>
+<li>Milestone 1:      <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone1 }}"></app-assignment-due-text></li>
+<li>Milestone 2:      <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone2 }}"></app-assignment-due-text></li>
+<li>Final Report:     <app-assignment-due-text dueText="{{ site.calendar.dueProjectReport }}"></app-assignment-due-text></li>
 </ul>
 <h2 id="proposal">Proposal</h2>
 <p>Your proposal will define your initial plan for this project.
@@ -131,6 +132,33 @@ Sign up for the reserved meeting times here:</p>
 <p>Submit your proposal document in PDF format and your proposal presentation in PDF, PPT, or PPTX format.</p>
 <p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitProjectProposal }}"></app-assignment-submission-link></p>
 <p>Be sure to consider guidance on <app-generated-link linkHREF="http://interactions.acm.org/archive/view/july-august-2017/making-your-presentation-accessible">Making Your Presentation Accessible</app-generated-link>.</p>
+<h2 id="survey-of-recent-related-research">Survey of Recent Related Research</h2>
+<p>A survey of recent related research serves to inform and help scope your intended contributions.
+Reviewing related work can often slip until late in a course project sequence,
+so this activity structures some early engagement with the literature.</p>
+<h3 id="survey-document">Survey Document</h3>
+<p>Identify at least 8 papers that can inform or are otherwise related to your group research project.
+These should be recent papers (e.g., any CHI 2020 paper is obviously appropriate,
+but you could also identify other recent or upcoming papers).</p>
+<p>For each paper, prepare a short summary that includes:</p>
+<ul>
+<li>Citation information for the paper</li>
+<li>A link to the article</li>
+<li>One short paragraph summarizing the paper (i.e., not a copy of the abstract, your own summary of the paper)</li>
+<li>One short paragraph on how it can inform or otherwise be related to your research</li>
+</ul>
+<p>Note that identifying such papers and preparing these summaries
+does not necessarily require deep engagement with the full details of the papers
+(e.g., as you would when reviewing a paper, directly building upon a paper,
+or reading one of the assigned papers for deep in-class discussion).
+Be sure you understand the papers at a level appropriate for discussing them as related research,
+but prioritize identifying relevant papers over pre-maturely going in-depth on papers that may ultimately be less relevant.</p>
+<p>Also note this intentionally is a group assignment.
+We do not expect or require that everybody in your group will have read all of the papers you identify.</p>
+<h3 id="survey-submission">Survey Submission</h3>
+<p><app-assignment-due-text dueText="{{ site.calendar.dueProjectRelatedResearch }}"></app-assignment-due-text></p>
+<p>Submit your survey of recent related research in PDF format:</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitProjectRelatedResearch }}"></app-assignment-submission-link></p>
 <h2 id="milestone-reports">Milestone Reports</h2>
 <p>Two milestone reports serve as a check on the trajectory of your project
 and an opportunity for feedback and guidance from staff and classmates.
@@ -264,32 +292,53 @@ This page is still being migrated and developed. All content remains subject to 
 </div>
 -->
 <h2 id="statistics-lab">Statistics Lab</h2>
-<p>To aid in developing necessary skills, you will complete a small statistics lab using <app-generated-link linkHREF="//www.r-project.org/">R</app-generated-link>.
-The lab will walk you through analyzing an example data set,
-and you will then analyze two datasets from published research papers.</p>
-<p>You will gain basic familiarity with analyzing experiments using mixed‑model analyses of variance.
+<p>The lab will walk you through analyzing an example data set,
+and you will then analyze two datasets from published research papers.
+You will gain basic familiarity with analyzing experiments using mixed‑model analyses of variance.
 Consistent with lecture, this assignment is not intended to provide complete knowledge of how to design
 or analyze experiments, which is far beyond the scope of one lecture or assignment.
 This assignment is instead focused on a pragmatic introduction to analyzing
 experiments based in designs you might later find useful.
 Please consider this assignment in the context of the material covered in lecture, as not all of it is repeated here.</p>
+<p>You will complete a small statistics lab using R:</p>
+<p><a href="https://www.r-project.org/">https://www.r-project.org/</a></p>
+<p>You will want to complete the assignment using R Markdown within RStudio Desktop:</p>
+<p><a href="https://rmarkdown.rstudio.com/">https://rmarkdown.rstudio.com/</a></p>
+<p><a href="https://rstudio.com/products/rstudio/#rstudio-desktop">https://rstudio.com/products/rstudio/#rstudio-desktop</a></p>
+<p>This will create a PDF that contains your interleaved comments, scripting commands, and output.
+This is a good practice for documenting your analysis, and easier than trying to copy and paste commands and graphs into a different document.</p>
 <p>In addition to the lecture material and the contents of this assignment,
 you might benefit from working through all or part of
 Jacob Wobbrock's independent study in Practical Statistics for Human-Computer Interaction.</p>
 <p><a href="http://depts.washington.edu/acelab/proj/ps4hci/index.html">http://depts.washington.edu/acelab/proj/ps4hci/index.html</a></p>
+<h3 id="working-with-a-partner">Working with a Partner</h3>
+<p>You are welcome to work with a partner throughout this assignment. Only one person in the partnership needs to submit an assignment. If you work with a partner, please include their name near the top of your report.</p>
+<p>When analyzing data (e.g., to write a paper), it is often valuable to talk through your analyses with another person.
+This is useful for checking that what you did sounds correct and for thinking about how to proceed if stuck.
+If you talked through the analysis with others who were not your partner, please also indicate this in your submission.</p>
+<h3 id="data-files-and-formatting">Data Files and Formatting</h3>
+<p>You will work with three datasets: one artificial and two from published studies.
+The data is appropriate for these analyses, but explicitly and intentionally not cleaned up for the sake of this assignment.
+One important implication is that you need to be mindful of the types assigned to columns in provided data files.
+For example, it will be your responsibility to decide what type to assign each field (e.g., continuous, ordinal, nominal).</p>
+<h3 id="grading">Grading</h3>
+<p>You will be graded on the correctness and the appropriateness of your responses to questions posed by the assignment.</p>
+<p>Although correctness may seem self-evident, community norms can sometimes make this less obvious.
+For example, analyses in the papers associated with assignment data were performed before many forms of analysis were available in available tools.
+Analyses that are now available may also not yet be commonly-known within a community.
+You are expected to make appropriate choices in your analyses and to explain those choices as necessary.
+We explicitly do not expect your analyses or results to exactly match those in the previously-published papers.</p>
+<p>Grading of appropriateness will be based in striking a balance between reporting sufficient detail while not reporting excessive detail.
+The goal is to gain experience reporting your results in approximately the same level of detail that should be included in reporting a research result.</p>
 <h3 id="statistics-lab-availability">Statistics Lab Availability</h3>
-<p>The statistics lab will be made available for download {{ site.calendar.availableStatisticsLab }}.</p>
 <!--
-The statistics lab is available for download:
-
-<app-assignment-submission-link linkSubmission="{{ site.linkStatisticsLab }}"></app-assignment-submission-link>
+The statistics lab will be made available for download {{ site.calendar.availableStatisticsLab }}.
 -->
+<p>The statistics lab is available for download:</p>
+<p><app-assignment-submission-link linkSubmission="{{ site.linkStatisticsLab }}"></app-assignment-submission-link></p>
 <h3 id="submission">Submission</h3>
 <p><app-assignment-due-text dueText="{{ site.calendar.dueStatisticsLab }}"></app-assignment-due-text></p>
-<!--
-`Decide on submission format, perhaps just an R Markdown file`
-`Submit a ZIP archive including your document in PDF format and any additional files:`
--->
+<p>Submit both your notebook in RMD format and a rendering in PDF format:</p>
 <p><app-assignment-submission-link linkSubmission="{{ site.linkSubmitStatisticsLab }}"></app-assignment-submission-link></p>
 </ng-template>
 
@@ -336,7 +385,15 @@ Due: <app-generated-link linkHREF="/assignments/project/#proposal">Project Propo
 </ng-template>
 
 <ng-template #chi2020>
-<p>CHI 2020 virtual conference activities TBD.</p>
+<p>Many of us would have been at CHI 2020 this week,
+and we encourage you to participate in remote activities being organized by various elements of the CHI community.
+As part of such activities, and/or through your own searching,
+also complete your group project's <app-generated-link linkHREF="https://courses.cs.washington.edu/courses/cse510/20sp/assignments/project#survey-of-recent-related-research">Survey of Recent Related Research</app-generated-link>.</p>
+<p>The course staff will be available to meet with project teams during class time.
+Such meetings are optional, but could focus on identifying potentially relevant readings,
+seeking guidance on how to think about a specific reading, or other project-related advising.
+Sign up for the reserved meeting times here:</p>
+<p><a href="https://calendar.google.com/calendar/selfsched?sstoken=UUw1Q2o3dVVUcXUyfGRlZmF1bHR8NWNhYzYxNjgxNDdhMGNhYWMzMGE4OTYyOWNhOWIyZDU">https://calendar.google.com/calendar/selfsched?sstoken=UUw1Q2o3dVVUcXUyfGRlZmF1bHR8NWNhYzYxNjgxNDdhMGNhYWMzMGE4OTYyOWNhOWIyZDU</a></p>
 </ng-template>
 
 <ng-template #contributions_in_hci>
