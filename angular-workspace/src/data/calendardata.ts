@@ -41,6 +41,7 @@ class CalendarData {
 
   dueProjectProposal = 'Uploaded by 11:59pm ' + moment('2020-04-15', 'YYYY-MM-DD').format('dddd, MMMM D') +
                        ' for in-class presentations ' + moment('2020-04-16', 'YYYY-MM-DD').format('dddd, MMMM D');
+  dueProjectRelatedResearch = 'Uploaded by 11:59pm ' + moment('2020-05-01', 'YYYY-MM-DD').format('dddd, MMMM D');
   dueProjectMilestone1 = 'Uploaded by 11:59pm ' + moment('2020-05-6', 'YYYY-MM-DD').format('dddd, MMMM D') +
                          ' for in-class presentations ' + moment('2020-05-07', 'YYYY-MM-DD').format('dddd, MMMM D');
   dueProjectMilestone2 = 'Uploaded by 11:59pm ' + moment('2020-05-27', 'YYYY-MM-DD').format('dddd, MMMM D') +
@@ -376,24 +377,45 @@ class CalendarData {
     {
       date: moment('2020-04-23', 'YYYY-MM-DD'),
 
-      name: 'Research Topic: Augmented Reality',
+      name: 'Research Topic: Construction Kits',
       guest: {
         name: 'Andrés Monroy-Hernández',
         link: 'http://www.andresmh.com/',
       },
-      contentNonstandard: 'readings_tbd',
+      readingsStandard: {
+        framing: {
+          authorText: 'Mitchel Resnick, Brian Silverman',
+          title: 'Some Reflections on Designing Construction Kits for Kids',
+          publicationText: 'IDC 2005',
+          link: 'https://canvas.uw.edu/files/63876804/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'Sayamindu Dasgupta, Benjamin Mako Hill',
+            title: 'How “Wide Walls” Can Increase Engagement: Evidence From a Natural Experiment in Scratch',
+            publicationText: 'CHI 2018',
+            link: 'https://canvas.uw.edu/files/63876803/download?download_frd=1'
+          },
+          {
+            authorText: 'Anhong Guo, Ilter Canberk, Hannah Murphy, Andrés Monroy-Hernández, Rajan Vaish',
+            title: 'Blocks: Collaborative and Persistent Augmented Reality Experiences',
+            publicationText: 'IMWUT, 2019',
+            link: 'https://canvas.uw.edu/files/63876805/download?download_frd=1'
+          },
+        ]
+      }
     },
     // Week 5
     {
       date: moment('2020-04-28', 'YYYY-MM-DD'),
 
-      name: 'CHI 2020 Virtual Conference',
+      name: 'CHI 2020 Virtual Activities',
       contentNonstandard: 'chi2020',
     },
     {
       date: moment('2020-04-30', 'YYYY-MM-DD'),
 
-      name: 'CHI 2020 Virtual Conference',
+      name: 'CHI 2020 Virtual Activities',
       contentNonstandard: 'chi2020',
     },
     // Week 6
@@ -536,7 +558,36 @@ class CalendarData {
         name: 'Adam Fourney',
         link: 'https://www.adamfourney.com/',
       },
-      contentNonstandard: 'readings_tbd',
+      readingsStandard: {
+        framing: {
+          authorText: 'G. W. Furnas, T. K. Landauer, L. M. Gomez, S. T. Dumais',
+          title: 'The Vocabulary Problem in Human-System Communication',
+          publicationText: 'CACM, 1987',
+          link: 'https://canvas.uw.edu/files/64126876/download?download_frd=1'
+        },
+        additional: [
+          {
+            authorText: 'Adam Fourney, Richard Mann, Michael Terry',
+            title: 'Query-Feature Graphs: Bridging User Vocabulary and System Functionality',
+            publicationText: 'UIST 2011',
+            link: 'https://canvas.uw.edu/files/64126916/download?download_frd=1'
+          },
+          {
+            authorText: 'Eytan Adar, Mira Dontcheva, Gierad Laput',
+            title: 'CommandSpace: Modeling the Relationships Between Tasks, Descriptions and Features',
+            publicationText: 'UIST 2014',
+            link: 'https://canvas.uw.edu/files/64126918/download?download_frd=1'
+          }
+        ]
+      },
+      additionalResources: [
+        {
+          authorText: 'Don Norman',
+          title: 'The Next UI Breakthrough: Command Lines',
+          publicationText: 'Interactions, 2007',
+          link: 'https://canvas.uw.edu/files/64126966/download?download_frd=1'
+        }
+      ]
     },
     {
       date: moment('2020-05-28', 'YYYY-MM-DD'),
@@ -637,31 +688,3 @@ class CalendarData {
 }
 
 export const calendar = new CalendarData();
-
-// name: 'Research Topic: Accessibility',
-// guest: {
-//   name: 'Meredith Ringle Morris',
-//   link: 'https://www.microsoft.com/en-us/research/people/merrie/',
-// },
-// readingsStandard: {
-//   framing: {
-//     authorText: 'Jennifer Mankoff, Gillian R. Hayes, Devva Kasnitz',
-//     title: 'Disability Studies as a Source of Critical Inquiry for the Field of Assistive Technology',
-//     publicationText: 'ASSETS 2010',
-//     link: 'https://canvas.uw.edu/files/63388453/download?download_frd=1'
-//   },
-//   additional: [
-//     {
-//       authorText: 'Shaun Kane, Meredith Ringel Morris, Ann Paradiso, Jon Campbell',
-//       title: '"At times avuncular and cantankerous, with the reflexes of a mongoose": Understanding Self-Expression through Augmentative and Alternative Communication Devices',
-//       publicationText: 'CSCW 2017',
-//       link: 'https://canvas.uw.edu/files/63388437/download?download_frd=1'
-//     },
-//     {
-//       authorText: 'Kyle Rector, Keith Salmon, Daniel Thornton, Neel Joshi, Meredith Ringel Morris',
-//       title: 'Eyes-Free Art: Exploring Proxemic Audio Interfaces For Blind and Low Vision Art Engagement',
-//       publicationText: 'UbiComp 2017',
-//       link: 'https://canvas.uw.edu/files/63388470/download?download_frd=1'
-//     },
-//   ]
-// }

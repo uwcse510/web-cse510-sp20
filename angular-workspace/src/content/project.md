@@ -34,12 +34,13 @@ You can also use that discussion to identify potential project partners and to p
 
 ## Project Deliverables
 
-Project deliverables are defined in terms of a proposal, a pair of self-defined milestones, and a final report.
+Project deliverables are defined in terms of a proposal, a survey of recent related research, a pair of self-defined milestones, and a final report.
 
-- Proposal:       <app-assignment-due-text dueText="{{ site.calendar.dueProjectProposal }}"></app-assignment-due-text>
-- Milestone 1:    <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone1 }}"></app-assignment-due-text>
-- Milestone 2:    <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone2 }}"></app-assignment-due-text>
-- Final Report:   <app-assignment-due-text dueText="{{ site.calendar.dueProjectReport }}"></app-assignment-due-text>
+- Proposal:         <app-assignment-due-text dueText="{{ site.calendar.dueProjectProposal }}"></app-assignment-due-text>
+- Related Research: <app-assignment-due-text dueText="{{ site.calendar.dueProjectRelatedResearch }}"></app-assignment-due-text>
+- Milestone 1:      <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone1 }}"></app-assignment-due-text>
+- Milestone 2:      <app-assignment-due-text dueText="{{ site.calendar.dueProjectMilestone2 }}"></app-assignment-due-text>
+- Final Report:     <app-assignment-due-text dueText="{{ site.calendar.dueProjectReport }}"></app-assignment-due-text>
 
 ## Proposal
 
@@ -115,6 +116,43 @@ Submit your proposal document in PDF format and your proposal presentation in PD
 <app-assignment-submission-link linkSubmission="{{ site.linkSubmitProjectProposal }}"></app-assignment-submission-link>
 
 Be sure to consider guidance on [Making Your Presentation Accessible](http://interactions.acm.org/archive/view/july-august-2017/making-your-presentation-accessible).
+
+## Survey of Recent Related Research
+
+A survey of recent related research serves to inform and help scope your intended contributions.
+Reviewing related work can often slip until late in a course project sequence,
+so this activity structures some early engagement with the literature. 
+
+### Survey Document
+
+Identify at least 8 papers that can inform or are otherwise related to your group research project.
+These should be recent papers (e.g., any CHI 2020 paper is obviously appropriate, 
+but you could also identify other recent or upcoming papers).
+
+For each paper, prepare a short summary that includes:
+
+- Citation information for the paper
+- A link to the article
+- One short paragraph summarizing the paper (i.e., not a copy of the abstract, your own summary of the paper)
+- One short paragraph on how it can inform or otherwise be related to your research
+
+Note that identifying such papers and preparing these summaries
+does not necessarily require deep engagement with the full details of the papers 
+(e.g., as you would when reviewing a paper, directly building upon a paper,
+or reading one of the assigned papers for deep in-class discussion).
+Be sure you understand the papers at a level appropriate for discussing them as related research,
+but prioritize identifying relevant papers over pre-maturely going in-depth on papers that may ultimately be less relevant.
+
+Also note this intentionally is a group assignment.
+We do not expect or require that everybody in your group will have read all of the papers you identify.
+
+### Survey Submission
+
+<app-assignment-due-text dueText="{{ site.calendar.dueProjectRelatedResearch }}"></app-assignment-due-text>
+
+Submit your survey of recent related research in PDF format:
+
+<app-assignment-submission-link linkSubmission="{{ site.linkSubmitProjectRelatedResearch }}"></app-assignment-submission-link>
 
 ## Milestone Reports
 
